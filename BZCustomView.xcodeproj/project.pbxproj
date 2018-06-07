@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38149A671F749D3C004A8938 /* CircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 38149A661F749D3C004A8938 /* CircleLayer.m */; };
+		38149A6A1F749EF5004A8938 /* OppoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 38149A691F749EF5004A8938 /* OppoVC.m */; };
+		38250EE71F74DC3C008B86A2 /* ShapeLayer_BezierParh.m in Sources */ = {isa = PBXBuildFile; fileRef = 38250EE61F74DC3C008B86A2 /* ShapeLayer_BezierParh.m */; };
 		382EA7051F7367470052BE27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 382EA7041F7367470052BE27 /* main.m */; };
 		382EA7081F7367470052BE27 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 382EA7071F7367470052BE27 /* AppDelegate.m */; };
 		382EA70B1F7367470052BE27 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 382EA70A1F7367470052BE27 /* ViewController.m */; };
@@ -15,6 +18,15 @@
 		382EA7131F7367470052BE27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 382EA7111F7367470052BE27 /* LaunchScreen.storyboard */; };
 		382EA71E1F7367470052BE27 /* BZCustomViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 382EA71D1F7367470052BE27 /* BZCustomViewTests.m */; };
 		382EA7291F7367470052BE27 /* BZCustomViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 382EA7281F7367470052BE27 /* BZCustomViewUITests.m */; };
+		382EA7391F7369C50052BE27 /* TestDrawRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 382EA7381F7369C50052BE27 /* TestDrawRect.m */; };
+		382EA73C1F7394430052BE27 /* LayerDraw.m in Sources */ = {isa = PBXBuildFile; fileRef = 382EA73B1F7394430052BE27 /* LayerDraw.m */; };
+		382EA7401F73AA390052BE27 /* LayerLoadingAnim.m in Sources */ = {isa = PBXBuildFile; fileRef = 382EA73F1F73AA390052BE27 /* LayerLoadingAnim.m */; };
+		387F80931F8DA47200C0DB10 /* MoveLabelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 387F80921F8DA47200C0DB10 /* MoveLabelVC.m */; };
+		389963411F8CC8810044C2D4 /* PointMoveByCircleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 389963401F8CC8810044C2D4 /* PointMoveByCircleVC.m */; };
+		389963451F8CC9E80044C2D4 /* PointMoveByCircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 389963441F8CC9E80044C2D4 /* PointMoveByCircleLayer.m */; };
+		6B07D51D20C8C13800BBB85B /* HWVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B07D51C20C8C13800BBB85B /* HWVC.m */; };
+		6B07D52020C8C15B00BBB85B /* HWCircleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B07D51F20C8C15B00BBB85B /* HWCircleProgressView.m */; };
+		6B3E5BD520C7DB15002CB0D9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B3E5BD420C7DB15002CB0D9 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +47,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		38149A651F749D3C004A8938 /* CircleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CircleLayer.h; path = layer/CircleLayer.h; sourceTree = "<group>"; };
+		38149A661F749D3C004A8938 /* CircleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CircleLayer.m; path = layer/CircleLayer.m; sourceTree = "<group>"; };
+		38149A681F749EF5004A8938 /* OppoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OppoVC.h; sourceTree = "<group>"; };
+		38149A691F749EF5004A8938 /* OppoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OppoVC.m; sourceTree = "<group>"; };
+		38250EE51F74DC3C008B86A2 /* ShapeLayer_BezierParh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShapeLayer_BezierParh.h; path = BezierPath_View/ShapeLayer_BezierParh.h; sourceTree = "<group>"; };
+		38250EE61F74DC3C008B86A2 /* ShapeLayer_BezierParh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShapeLayer_BezierParh.m; path = BezierPath_View/ShapeLayer_BezierParh.m; sourceTree = "<group>"; };
 		382EA7001F7367470052BE27 /* BZCustomView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BZCustomView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		382EA7041F7367470052BE27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		382EA7061F7367470052BE27 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +69,23 @@
 		382EA7241F7367470052BE27 /* BZCustomViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BZCustomViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		382EA7281F7367470052BE27 /* BZCustomViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BZCustomViewUITests.m; sourceTree = "<group>"; };
 		382EA72A1F7367470052BE27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		382EA7371F7369C50052BE27 /* TestDrawRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestDrawRect.h; path = view/TestDrawRect.h; sourceTree = "<group>"; };
+		382EA7381F7369C50052BE27 /* TestDrawRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestDrawRect.m; path = view/TestDrawRect.m; sourceTree = "<group>"; };
+		382EA73A1F7394430052BE27 /* LayerDraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LayerDraw.h; path = view/LayerDraw.h; sourceTree = "<group>"; };
+		382EA73B1F7394430052BE27 /* LayerDraw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LayerDraw.m; path = view/LayerDraw.m; sourceTree = "<group>"; };
+		382EA73E1F73AA390052BE27 /* LayerLoadingAnim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LayerLoadingAnim.h; path = layer/LayerLoadingAnim.h; sourceTree = "<group>"; };
+		382EA73F1F73AA390052BE27 /* LayerLoadingAnim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LayerLoadingAnim.m; path = layer/LayerLoadingAnim.m; sourceTree = "<group>"; };
+		387F80911F8DA47200C0DB10 /* MoveLabelVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoveLabelVC.h; path = movelabel/MoveLabelVC.h; sourceTree = "<group>"; };
+		387F80921F8DA47200C0DB10 /* MoveLabelVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoveLabelVC.m; path = movelabel/MoveLabelVC.m; sourceTree = "<group>"; };
+		3899633F1F8CC8810044C2D4 /* PointMoveByCircleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointMoveByCircleVC.h; sourceTree = "<group>"; };
+		389963401F8CC8810044C2D4 /* PointMoveByCircleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointMoveByCircleVC.m; sourceTree = "<group>"; };
+		389963431F8CC9E80044C2D4 /* PointMoveByCircleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PointMoveByCircleLayer.h; path = pointCircle/PointMoveByCircleLayer.h; sourceTree = "<group>"; };
+		389963441F8CC9E80044C2D4 /* PointMoveByCircleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PointMoveByCircleLayer.m; path = pointCircle/PointMoveByCircleLayer.m; sourceTree = "<group>"; };
+		6B07D51B20C8C13800BBB85B /* HWVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWVC.h; sourceTree = "<group>"; };
+		6B07D51C20C8C13800BBB85B /* HWVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWVC.m; sourceTree = "<group>"; };
+		6B07D51E20C8C15B00BBB85B /* HWCircleProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWCircleProgressView.h; sourceTree = "<group>"; };
+		6B07D51F20C8C15B00BBB85B /* HWCircleProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWCircleProgressView.m; sourceTree = "<group>"; };
+		6B3E5BD420C7DB15002CB0D9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +113,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38250EE41F74DBEF008B86A2 /* BezierPath_View */ = {
+			isa = PBXGroup;
+			children = (
+				38250EE51F74DC3C008B86A2 /* ShapeLayer_BezierParh.h */,
+				38250EE61F74DC3C008B86A2 /* ShapeLayer_BezierParh.m */,
+			);
+			name = BezierPath_View;
+			sourceTree = "<group>";
+		};
 		382EA6F71F7367470052BE27 = {
 			isa = PBXGroup;
 			children = (
+				6B3E5BD420C7DB15002CB0D9 /* Default-568h@2x.png */,
 				382EA7021F7367470052BE27 /* BZCustomView */,
 				382EA71C1F7367470052BE27 /* BZCustomViewTests */,
 				382EA7271F7367470052BE27 /* BZCustomViewUITests */,
@@ -101,6 +146,12 @@
 		382EA7021F7367470052BE27 /* BZCustomView */ = {
 			isa = PBXGroup;
 			children = (
+				6B07D51A20C8C11500BBB85B /* hwprogress */,
+				387F80901F8DA43A00C0DB10 /* movelabel */,
+				389963421F8CC94D0044C2D4 /* pointCircle */,
+				38250EE41F74DBEF008B86A2 /* BezierPath_View */,
+				382EA73D1F73AA150052BE27 /* layer */,
+				382EA7361F7367500052BE27 /* view */,
 				382EA7061F7367470052BE27 /* AppDelegate.h */,
 				382EA7071F7367470052BE27 /* AppDelegate.m */,
 				382EA7091F7367470052BE27 /* ViewController.h */,
@@ -110,6 +161,8 @@
 				382EA7111F7367470052BE27 /* LaunchScreen.storyboard */,
 				382EA7141F7367470052BE27 /* Info.plist */,
 				382EA7031F7367470052BE27 /* Supporting Files */,
+				38149A681F749EF5004A8938 /* OppoVC.h */,
+				38149A691F749EF5004A8938 /* OppoVC.m */,
 			);
 			path = BZCustomView;
 			sourceTree = "<group>";
@@ -138,6 +191,59 @@
 				382EA72A1F7367470052BE27 /* Info.plist */,
 			);
 			path = BZCustomViewUITests;
+			sourceTree = "<group>";
+		};
+		382EA7361F7367500052BE27 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				382EA7371F7369C50052BE27 /* TestDrawRect.h */,
+				382EA7381F7369C50052BE27 /* TestDrawRect.m */,
+				382EA73A1F7394430052BE27 /* LayerDraw.h */,
+				382EA73B1F7394430052BE27 /* LayerDraw.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		382EA73D1F73AA150052BE27 /* layer */ = {
+			isa = PBXGroup;
+			children = (
+				382EA73E1F73AA390052BE27 /* LayerLoadingAnim.h */,
+				382EA73F1F73AA390052BE27 /* LayerLoadingAnim.m */,
+				38149A651F749D3C004A8938 /* CircleLayer.h */,
+				38149A661F749D3C004A8938 /* CircleLayer.m */,
+			);
+			name = layer;
+			sourceTree = "<group>";
+		};
+		387F80901F8DA43A00C0DB10 /* movelabel */ = {
+			isa = PBXGroup;
+			children = (
+				387F80911F8DA47200C0DB10 /* MoveLabelVC.h */,
+				387F80921F8DA47200C0DB10 /* MoveLabelVC.m */,
+			);
+			name = movelabel;
+			sourceTree = "<group>";
+		};
+		389963421F8CC94D0044C2D4 /* pointCircle */ = {
+			isa = PBXGroup;
+			children = (
+				3899633F1F8CC8810044C2D4 /* PointMoveByCircleVC.h */,
+				389963401F8CC8810044C2D4 /* PointMoveByCircleVC.m */,
+				389963431F8CC9E80044C2D4 /* PointMoveByCircleLayer.h */,
+				389963441F8CC9E80044C2D4 /* PointMoveByCircleLayer.m */,
+			);
+			name = pointCircle;
+			sourceTree = "<group>";
+		};
+		6B07D51A20C8C11500BBB85B /* hwprogress */ = {
+			isa = PBXGroup;
+			children = (
+				6B07D51B20C8C13800BBB85B /* HWVC.h */,
+				6B07D51C20C8C13800BBB85B /* HWVC.m */,
+				6B07D51E20C8C15B00BBB85B /* HWCircleProgressView.h */,
+				6B07D51F20C8C15B00BBB85B /* HWCircleProgressView.m */,
+			);
+			name = hwprogress;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				382EA7131F7367470052BE27 /* LaunchScreen.storyboard in Resources */,
+				6B3E5BD520C7DB15002CB0D9 /* Default-568h@2x.png in Resources */,
 				382EA7101F7367470052BE27 /* Assets.xcassets in Resources */,
 				382EA70E1F7367470052BE27 /* Main.storyboard in Resources */,
 			);
@@ -273,9 +380,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B07D51D20C8C13800BBB85B /* HWVC.m in Sources */,
+				38250EE71F74DC3C008B86A2 /* ShapeLayer_BezierParh.m in Sources */,
 				382EA70B1F7367470052BE27 /* ViewController.m in Sources */,
+				382EA7401F73AA390052BE27 /* LayerLoadingAnim.m in Sources */,
+				38149A6A1F749EF5004A8938 /* OppoVC.m in Sources */,
+				387F80931F8DA47200C0DB10 /* MoveLabelVC.m in Sources */,
+				6B07D52020C8C15B00BBB85B /* HWCircleProgressView.m in Sources */,
+				382EA7391F7369C50052BE27 /* TestDrawRect.m in Sources */,
+				389963451F8CC9E80044C2D4 /* PointMoveByCircleLayer.m in Sources */,
 				382EA7081F7367470052BE27 /* AppDelegate.m in Sources */,
+				38149A671F749D3C004A8938 /* CircleLayer.m in Sources */,
+				382EA73C1F7394430052BE27 /* LayerDraw.m in Sources */,
 				382EA7051F7367470052BE27 /* main.m in Sources */,
+				389963411F8CC8810044C2D4 /* PointMoveByCircleVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +627,7 @@
 				382EA72F1F7367470052BE27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		382EA7301F7367470052BE27 /* Build configuration list for PBXNativeTarget "BZCustomViewTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +636,7 @@
 				382EA7321F7367470052BE27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		382EA7331F7367470052BE27 /* Build configuration list for PBXNativeTarget "BZCustomViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +645,7 @@
 				382EA7351F7367470052BE27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
