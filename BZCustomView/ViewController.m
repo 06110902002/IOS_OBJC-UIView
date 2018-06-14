@@ -15,6 +15,7 @@
 #import "PointMoveByCircleVC.h"
 #import "MoveLabelVC.h"
 #import "HWVC.h"
+#import "SeekBarVC.h"
 
 @interface ViewController ()<CAAnimationDelegate,CALayerDelegate>
 
@@ -71,6 +72,14 @@
     [self.view addSubview:btnHW];
     
     
+    UIButton* btnSeekBar = [[UIButton alloc] initWithFrame:CGRectMake(230, 190, 180, 30)];
+    btnSeekBar.backgroundColor = [UIColor grayColor];
+    btnSeekBar.tag = 14;
+    [btnSeekBar setTitle:@"SeekBar" forState:UIControlStateNormal];
+    [btnSeekBar addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btnSeekBar];
+    
+    
 }
 
 -(void) onClick:(UIButton*) button{
@@ -99,6 +108,12 @@
         case 13:{
             
             [self presentViewController:[[HWVC alloc] init] animated:true completion:nil];
+        }
+            break;
+            
+        case 14:{
+            
+            [self presentViewController:[[SeekBarVC alloc] init] animated:true completion:nil];
         }
             break;
             

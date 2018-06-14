@@ -182,7 +182,6 @@
     //stopTem = (int) (newAngle / 6);
     //setStopAngle(newAngle);
     [self updateStopAngle:newAngle];
-    //NSLog(@"186---------:move:%f",point.x);
 }
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
