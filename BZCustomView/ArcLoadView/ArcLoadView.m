@@ -13,7 +13,8 @@
 -(instancetype) initWithFrame:(CGRect)frame{
     if(self = [super initWithFrame:frame]){
         self.pointLayer = [CAShapeLayer layer];
-         self.pointLayer.frame = CGRectMake(0, 0, 15, 15);
+         self.pointLayer.frame = CGRectMake(self.layer.frame.size.width / 2,
+         120, 15, 15);
 
         self.pointLayer.backgroundColor = [UIColor greenColor].CGColor;
         [self.layer addSublayer:self.pointLayer];
@@ -31,41 +32,14 @@
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
-//    // Drawing code
-//
-//    // Drawing code
-//    // 初始化UIBezierPath
-//    // 首先设置一个起始点
-//    CGPoint startPoint = CGPointMake(rect.size.width/2, 120);
-//    // 以起始点为路径的起点
-//    [self.path moveToPoint:startPoint];
-//    // 设置一个终点
-//    CGPoint endPoint = CGPointMake(rect.size.width/2, rect.size.height-40);
-//    // 设置第一个控制点
-//    CGPoint controlPoint1 = CGPointMake(100, 20);
-//    // 设置第二个控制点
-//    CGPoint controlPoint2 = CGPointMake(0, 180);
-//    // 添加三次贝塞尔曲线
-//    [self.path addCurveToPoint:endPoint controlPoint1:controlPoint1 controlPoint2:controlPoint2];
-//    // 设置另一个起始点
-//    [self.path moveToPoint:endPoint];
-//    // 设置第三个控制点
-//    CGPoint controlPoint3 = CGPointMake(rect.size.width-100, 20);
-//    // 设置第四个控制点
-//    CGPoint controlPoint4 = CGPointMake(rect.size.width, 180);
-//    // 添加三次贝塞尔曲线
-//    [self.path addCurveToPoint:startPoint controlPoint1:controlPoint4 controlPoint2:controlPoint3];
-//    // 设置线宽
-//    self.path.lineWidth = 3;
-//    // 设置线断面类型
-//    self.path.lineCapStyle = kCGLineCapRound;
-//    // 设置连接类型
-//    self.path.lineJoinStyle = kCGLineJoinRound;
-//    // 设置画笔颜色
-//    [[UIColor redColor] set];
-//    [self.path stroke];
+
+    [self pathAnim:rect];
+    [self testDrawLineAnim];
     
-    
+}
+
+
+-(void) testDrawLineAnim{
     NSLog(@"69----------:%f  %f",self.bounds.size.width / 2,self.screenWidth / 2);
     
     //上半部轨迹:
@@ -125,6 +99,43 @@
     
 }
 
+
+
+-(void) pathAnim:(CGRect)rect{
+        // Drawing code
+        // 初始化UIBezierPath
+        // 首先设置一个起始点
+        CGPoint startPoint = CGPointMake(rect.size.width/2, 120);
+        // 以起始点为路径的起点
+        [self.path moveToPoint:startPoint];
+        // 设置一个终点
+        CGPoint endPoint = CGPointMake(rect.size.width/2, rect.size.height-40);
+        // 设置第一个控制点
+        CGPoint controlPoint1 = CGPointMake(100, 20);
+        // 设置第二个控制点
+        CGPoint controlPoint2 = CGPointMake(0, 180);
+        // 添加三次贝塞尔曲线
+        [self.path addCurveToPoint:endPoint controlPoint1:controlPoint1 controlPoint2:controlPoint2];
+        // 设置另一个起始点
+        [self.path moveToPoint:endPoint];
+        // 设置第三个控制点
+        CGPoint controlPoint3 = CGPointMake(rect.size.width-100, 20);
+        // 设置第四个控制点
+        CGPoint controlPoint4 = CGPointMake(rect.size.width, 180);
+        // 添加三次贝塞尔曲线
+        [self.path addCurveToPoint:startPoint controlPoint1:controlPoint4 controlPoint2:controlPoint3];
+        // 设置线宽
+        self.path.lineWidth = 3;
+        // 设置线断面类型
+        self.path.lineCapStyle = kCGLineCapRound;
+        // 设置连接类型
+        self.path.lineJoinStyle = kCGLineJoinRound;
+        // 设置画笔颜色
+        [[UIColor redColor] set];
+        [self.path stroke];
+}
+
+
 -(void)startAnim{
     CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
     // 设置动画的路径为心形路径
@@ -137,8 +148,8 @@
     animation.fillMode = kCAFillModeForwards;
     // 将动画添加到动画视图上
 
-    self.pointLayer.position = CGPointMake(self.layer.frame.size.width / 2 + cos(90 * 3.1415926 / 180) * 25,
-                                                          self.layer.frame.size.width / 2 + sin(90 * 3.1415926 / 180) * 25);
+    self.pointLayer.position = CGPointMake(self.layer.frame.size.width / 2,
+                                                          120);
     [self.pointLayer addAnimation:animation forKey:nil];
     
   
