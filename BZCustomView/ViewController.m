@@ -16,6 +16,7 @@
 #import "MoveLabelVC.h"
 #import "HWVC.h"
 #import "SeekBarVC.h"
+#import "ArcVC.h"
 
 @interface ViewController ()<CAAnimationDelegate,CALayerDelegate>
 
@@ -79,6 +80,13 @@
     [btnSeekBar addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btnSeekBar];
     
+    UIButton* arcLoad = [[UIButton alloc] initWithFrame:CGRectMake(230, 250, 180, 30)];
+    arcLoad.backgroundColor = [UIColor grayColor];
+    arcLoad.tag = 15;
+    [arcLoad setTitle:@"弧形加载动画" forState:UIControlStateNormal];
+    [arcLoad addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:arcLoad];
+    
     
 }
 
@@ -116,6 +124,12 @@
             [self presentViewController:[[SeekBarVC alloc] init] animated:true completion:nil];
         }
             break;
+            
+        case 15:{
+                   
+             [self presentViewController:[[ArcVC alloc] init] animated:true completion:nil];
+          }
+             break;
             
         default:
             break;
