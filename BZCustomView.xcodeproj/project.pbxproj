@@ -32,6 +32,27 @@
 		6B121FA12440A04700BD804F /* ArcVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B121FA02440A04700BD804F /* ArcVC.m */; };
 		6B121FA42440A1F800BD804F /* ArcLoadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B121FA32440A1F800BD804F /* ArcLoadView.m */; };
 		6B3E5BD520C7DB15002CB0D9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B3E5BD420C7DB15002CB0D9 /* Default-568h@2x.png */; };
+		6BCF9A93244F194B0036E8B4 /* HWPanModalContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A64244F194B0036E8B4 /* HWPanModalContainerView.m */; };
+		6BCF9A94244F194B0036E8B4 /* HWPanModalPresentationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A66244F194B0036E8B4 /* HWPanModalPresentationDelegate.m */; };
+		6BCF9A95244F194B0036E8B4 /* HWDimmedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A67244F194B0036E8B4 /* HWDimmedView.m */; };
+		6BCF9A96244F194B0036E8B4 /* UIViewController+LayoutHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A69244F194B0036E8B4 /* UIViewController+LayoutHelper.m */; };
+		6BCF9A97244F194B0036E8B4 /* UIScrollView+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A6A244F194B0036E8B4 /* UIScrollView+Helper.m */; };
+		6BCF9A98244F194B0036E8B4 /* UIViewController+PanModalDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A6B244F194B0036E8B4 /* UIViewController+PanModalDefault.m */; };
+		6BCF9A99244F194B0036E8B4 /* UIView+HW_Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A6E244F194B0036E8B4 /* UIView+HW_Frame.m */; };
+		6BCF9A9A244F194B0036E8B4 /* HWVisualEffectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A72244F194B0036E8B4 /* HWVisualEffectView.m */; };
+		6BCF9A9B244F194B0036E8B4 /* HWPanModalPresentableHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A73244F194B0036E8B4 /* HWPanModalPresentableHandler.m */; };
+		6BCF9A9C244F194B0036E8B4 /* HWBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A74244F194B0036E8B4 /* HWBaseViewController.m */; };
+		6BCF9A9D244F194B0036E8B4 /* HWShoppingCartPresentingAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A76244F194B0036E8B4 /* HWShoppingCartPresentingAnimation.m */; };
+		6BCF9A9E244F194B0036E8B4 /* HWPanModalInteractiveAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A78244F194B0036E8B4 /* HWPanModalInteractiveAnimator.m */; };
+		6BCF9A9F244F194B0036E8B4 /* HWPageSheetPresentingAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A79244F194B0036E8B4 /* HWPageSheetPresentingAnimation.m */; };
+		6BCF9AA0244F194B0036E8B4 /* HWPanModalAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A7B244F194B0036E8B4 /* HWPanModalAnimator.m */; };
+		6BCF9AA1244F194B0036E8B4 /* HWPanModalPresentationAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A7F244F194B0036E8B4 /* HWPanModalPresentationAnimator.m */; };
+		6BCF9AA2244F194B0036E8B4 /* UIViewController+PanModalPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A83244F194B0036E8B4 /* UIViewController+PanModalPresenter.m */; };
+		6BCF9AA3244F194B0036E8B4 /* HWPanContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A85244F194B0036E8B4 /* HWPanContainerView.m */; };
+		6BCF9AA4244F194B0036E8B4 /* HWPanIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A89244F194B0036E8B4 /* HWPanIndicatorView.m */; };
+		6BCF9AA5244F194B0036E8B4 /* HWPanModalContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A8E244F194B0036E8B4 /* HWPanModalContentView.m */; };
+		6BCF9AA6244F194B0036E8B4 /* HWPanModalPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A8F244F194B0036E8B4 /* HWPanModalPresentationController.m */; };
+		6BCF9AA7244F194B0036E8B4 /* KeyValueObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A92244F194B0036E8B4 /* KeyValueObserver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +122,54 @@
 		6B121FA22440A1F800BD804F /* ArcLoadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ArcLoadView.h; path = ArcLoadView/ArcLoadView.h; sourceTree = "<group>"; };
 		6B121FA32440A1F800BD804F /* ArcLoadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ArcLoadView.m; path = ArcLoadView/ArcLoadView.m; sourceTree = "<group>"; };
 		6B3E5BD420C7DB15002CB0D9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6BCF9A61244F194B0036E8B4 /* HWPanModalPresentationUpdateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPanModalPresentationUpdateProtocol.h; sourceTree = "<group>"; };
+		6BCF9A62244F194B0036E8B4 /* HWPanModalPresentable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPanModalPresentable.h; sourceTree = "<group>"; };
+		6BCF9A63244F194B0036E8B4 /* HWPanModalIndicatorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPanModalIndicatorProtocol.h; sourceTree = "<group>"; };
+		6BCF9A64244F194B0036E8B4 /* HWPanModalContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWPanModalContainerView.m; sourceTree = "<group>"; };
+		6BCF9A65244F194B0036E8B4 /* HWPanIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPanIndicatorView.h; sourceTree = "<group>"; };
+		6BCF9A66244F194B0036E8B4 /* HWPanModalPresentationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWPanModalPresentationDelegate.m; sourceTree = "<group>"; };
+		6BCF9A67244F194B0036E8B4 /* HWDimmedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWDimmedView.m; sourceTree = "<group>"; };
+		6BCF9A69244F194B0036E8B4 /* UIViewController+LayoutHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LayoutHelper.m"; sourceTree = "<group>"; };
+		6BCF9A6A244F194B0036E8B4 /* UIScrollView+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Helper.m"; sourceTree = "<group>"; };
+		6BCF9A6B244F194B0036E8B4 /* UIViewController+PanModalDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PanModalDefault.m"; sourceTree = "<group>"; };
+		6BCF9A6C244F194B0036E8B4 /* UIView+HW_Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HW_Frame.h"; sourceTree = "<group>"; };
+		6BCF9A6D244F194B0036E8B4 /* UIViewController+LayoutHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LayoutHelper.h"; sourceTree = "<group>"; };
+		6BCF9A6E244F194B0036E8B4 /* UIView+HW_Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HW_Frame.m"; sourceTree = "<group>"; };
+		6BCF9A6F244F194B0036E8B4 /* UIViewController+PanModalDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PanModalDefault.h"; sourceTree = "<group>"; };
+		6BCF9A70244F194B0036E8B4 /* UIScrollView+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Helper.h"; sourceTree = "<group>"; };
+		6BCF9A71244F194B0036E8B4 /* HWPanContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPanContainerView.h; sourceTree = "<group>"; };
+		6BCF9A72244F194B0036E8B4 /* HWVisualEffectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWVisualEffectView.m; sourceTree = "<group>"; };
+		6BCF9A73244F194B0036E8B4 /* HWPanModalPresentableHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWPanModalPresentableHandler.m; sourceTree = "<group>"; };
+		6BCF9A74244F194B0036E8B4 /* HWBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWBaseViewController.m; sourceTree = "<group>"; };
+		6BCF9A75244F194B0036E8B4 /* KeyValueObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyValueObserver.h; sourceTree = "<group>"; };
+		6BCF9A76244F194B0036E8B4 /* HWShoppingCartPresentingAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWShoppingCartPresentingAnimation.m; sourceTree = "<group>"; };
+		6BCF9A78244F194B0036E8B4 /* HWPanModalInteractiveAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWPanModalInteractiveAnimator.m; sourceTree = "<group>"; };
+		6BCF9A79244F194B0036E8B4 /* HWPageSheetPresentingAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWPageSheetPresentingAnimation.m; sourceTree = "<group>"; };
+		6BCF9A7A244F194B0036E8B4 /* HWPresentingVCAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPresentingVCAnimatedTransitioning.h; sourceTree = "<group>"; };
+		6BCF9A7B244F194B0036E8B4 /* HWPanModalAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWPanModalAnimator.m; sourceTree = "<group>"; };
+		6BCF9A7C244F194B0036E8B4 /* HWPanModalPresentationAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPanModalPresentationAnimator.h; sourceTree = "<group>"; };
+		6BCF9A7D244F194B0036E8B4 /* HWPanModalInteractiveAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPanModalInteractiveAnimator.h; sourceTree = "<group>"; };
+		6BCF9A7E244F194B0036E8B4 /* HWPageSheetPresentingAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPageSheetPresentingAnimation.h; sourceTree = "<group>"; };
+		6BCF9A7F244F194B0036E8B4 /* HWPanModalPresentationAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWPanModalPresentationAnimator.m; sourceTree = "<group>"; };
+		6BCF9A80244F194B0036E8B4 /* HWPanModalAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPanModalAnimator.h; sourceTree = "<group>"; };
+		6BCF9A81244F194B0036E8B4 /* HWPanModalContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPanModalContentView.h; sourceTree = "<group>"; };
+		6BCF9A82244F194B0036E8B4 /* HWPanModalPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPanModalPresentationController.h; sourceTree = "<group>"; };
+		6BCF9A83244F194B0036E8B4 /* UIViewController+PanModalPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PanModalPresenter.m"; sourceTree = "<group>"; };
+		6BCF9A84244F194B0036E8B4 /* HWPanModalContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPanModalContainerView.h; sourceTree = "<group>"; };
+		6BCF9A85244F194B0036E8B4 /* HWPanContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWPanContainerView.m; sourceTree = "<group>"; };
+		6BCF9A86244F194B0036E8B4 /* HWDimmedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWDimmedView.h; sourceTree = "<group>"; };
+		6BCF9A87244F194B0036E8B4 /* HWPanModalHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPanModalHeight.h; sourceTree = "<group>"; };
+		6BCF9A88244F194B0036E8B4 /* HWPanModalPresentationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPanModalPresentationDelegate.h; sourceTree = "<group>"; };
+		6BCF9A89244F194B0036E8B4 /* HWPanIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWPanIndicatorView.m; sourceTree = "<group>"; };
+		6BCF9A8A244F194B0036E8B4 /* HWBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWBaseViewController.h; sourceTree = "<group>"; };
+		6BCF9A8B244F194B0036E8B4 /* HWPanModalPresentableHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPanModalPresentableHandler.h; sourceTree = "<group>"; };
+		6BCF9A8C244F194B0036E8B4 /* HWPanModalPresenterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPanModalPresenterProtocol.h; sourceTree = "<group>"; };
+		6BCF9A8D244F194B0036E8B4 /* HWVisualEffectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWVisualEffectView.h; sourceTree = "<group>"; };
+		6BCF9A8E244F194B0036E8B4 /* HWPanModalContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWPanModalContentView.m; sourceTree = "<group>"; };
+		6BCF9A8F244F194B0036E8B4 /* HWPanModalPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWPanModalPresentationController.m; sourceTree = "<group>"; };
+		6BCF9A90244F194B0036E8B4 /* UIViewController+PanModalPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PanModalPresenter.h"; sourceTree = "<group>"; };
+		6BCF9A91244F194B0036E8B4 /* HWShoppingCartPresentingAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWShoppingCartPresentingAnimation.h; sourceTree = "<group>"; };
+		6BCF9A92244F194B0036E8B4 /* KeyValueObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyValueObserver.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +230,7 @@
 		382EA7021F7367470052BE27 /* BZCustomView */ = {
 			isa = PBXGroup;
 			children = (
+				6BCF9A5F244F194B0036E8B4 /* UIPresentationController */,
 				6B121F9E2440A00F00BD804F /* ArcLoadView */,
 				6B037DD620D2072900D03148 /* utils */,
 				6B0BE99E20D109CC00640AE9 /* seekBar */,
@@ -293,6 +363,85 @@
 				6B121FA32440A1F800BD804F /* ArcLoadView.m */,
 			);
 			name = ArcLoadView;
+			sourceTree = "<group>";
+		};
+		6BCF9A5F244F194B0036E8B4 /* UIPresentationController */ = {
+			isa = PBXGroup;
+			children = (
+				6BCF9A60244F194B0036E8B4 /* protocal */,
+				6BCF9A64244F194B0036E8B4 /* HWPanModalContainerView.m */,
+				6BCF9A65244F194B0036E8B4 /* HWPanIndicatorView.h */,
+				6BCF9A66244F194B0036E8B4 /* HWPanModalPresentationDelegate.m */,
+				6BCF9A67244F194B0036E8B4 /* HWDimmedView.m */,
+				6BCF9A68244F194B0036E8B4 /* category */,
+				6BCF9A71244F194B0036E8B4 /* HWPanContainerView.h */,
+				6BCF9A72244F194B0036E8B4 /* HWVisualEffectView.m */,
+				6BCF9A73244F194B0036E8B4 /* HWPanModalPresentableHandler.m */,
+				6BCF9A74244F194B0036E8B4 /* HWBaseViewController.m */,
+				6BCF9A75244F194B0036E8B4 /* KeyValueObserver.h */,
+				6BCF9A76244F194B0036E8B4 /* HWShoppingCartPresentingAnimation.m */,
+				6BCF9A77244F194B0036E8B4 /* animator */,
+				6BCF9A81244F194B0036E8B4 /* HWPanModalContentView.h */,
+				6BCF9A82244F194B0036E8B4 /* HWPanModalPresentationController.h */,
+				6BCF9A83244F194B0036E8B4 /* UIViewController+PanModalPresenter.m */,
+				6BCF9A84244F194B0036E8B4 /* HWPanModalContainerView.h */,
+				6BCF9A85244F194B0036E8B4 /* HWPanContainerView.m */,
+				6BCF9A86244F194B0036E8B4 /* HWDimmedView.h */,
+				6BCF9A87244F194B0036E8B4 /* HWPanModalHeight.h */,
+				6BCF9A88244F194B0036E8B4 /* HWPanModalPresentationDelegate.h */,
+				6BCF9A89244F194B0036E8B4 /* HWPanIndicatorView.m */,
+				6BCF9A8A244F194B0036E8B4 /* HWBaseViewController.h */,
+				6BCF9A8B244F194B0036E8B4 /* HWPanModalPresentableHandler.h */,
+				6BCF9A8C244F194B0036E8B4 /* HWPanModalPresenterProtocol.h */,
+				6BCF9A8D244F194B0036E8B4 /* HWVisualEffectView.h */,
+				6BCF9A8E244F194B0036E8B4 /* HWPanModalContentView.m */,
+				6BCF9A8F244F194B0036E8B4 /* HWPanModalPresentationController.m */,
+				6BCF9A90244F194B0036E8B4 /* UIViewController+PanModalPresenter.h */,
+				6BCF9A91244F194B0036E8B4 /* HWShoppingCartPresentingAnimation.h */,
+				6BCF9A92244F194B0036E8B4 /* KeyValueObserver.m */,
+			);
+			path = UIPresentationController;
+			sourceTree = "<group>";
+		};
+		6BCF9A60244F194B0036E8B4 /* protocal */ = {
+			isa = PBXGroup;
+			children = (
+				6BCF9A61244F194B0036E8B4 /* HWPanModalPresentationUpdateProtocol.h */,
+				6BCF9A62244F194B0036E8B4 /* HWPanModalPresentable.h */,
+				6BCF9A63244F194B0036E8B4 /* HWPanModalIndicatorProtocol.h */,
+			);
+			path = protocal;
+			sourceTree = "<group>";
+		};
+		6BCF9A68244F194B0036E8B4 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				6BCF9A69244F194B0036E8B4 /* UIViewController+LayoutHelper.m */,
+				6BCF9A6A244F194B0036E8B4 /* UIScrollView+Helper.m */,
+				6BCF9A6B244F194B0036E8B4 /* UIViewController+PanModalDefault.m */,
+				6BCF9A6C244F194B0036E8B4 /* UIView+HW_Frame.h */,
+				6BCF9A6D244F194B0036E8B4 /* UIViewController+LayoutHelper.h */,
+				6BCF9A6E244F194B0036E8B4 /* UIView+HW_Frame.m */,
+				6BCF9A6F244F194B0036E8B4 /* UIViewController+PanModalDefault.h */,
+				6BCF9A70244F194B0036E8B4 /* UIScrollView+Helper.h */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		6BCF9A77244F194B0036E8B4 /* animator */ = {
+			isa = PBXGroup;
+			children = (
+				6BCF9A78244F194B0036E8B4 /* HWPanModalInteractiveAnimator.m */,
+				6BCF9A79244F194B0036E8B4 /* HWPageSheetPresentingAnimation.m */,
+				6BCF9A7A244F194B0036E8B4 /* HWPresentingVCAnimatedTransitioning.h */,
+				6BCF9A7B244F194B0036E8B4 /* HWPanModalAnimator.m */,
+				6BCF9A7C244F194B0036E8B4 /* HWPanModalPresentationAnimator.h */,
+				6BCF9A7D244F194B0036E8B4 /* HWPanModalInteractiveAnimator.h */,
+				6BCF9A7E244F194B0036E8B4 /* HWPageSheetPresentingAnimation.h */,
+				6BCF9A7F244F194B0036E8B4 /* HWPanModalPresentationAnimator.m */,
+				6BCF9A80244F194B0036E8B4 /* HWPanModalAnimator.h */,
+			);
+			path = animator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,21 +582,42 @@
 				6B0BE9A420D10BCF00640AE9 /* SeekBarView.m in Sources */,
 				6B121FA42440A1F800BD804F /* ArcLoadView.m in Sources */,
 				6B07D51D20C8C13800BBB85B /* HWVC.m in Sources */,
+				6BCF9AA5244F194B0036E8B4 /* HWPanModalContentView.m in Sources */,
+				6BCF9A9B244F194B0036E8B4 /* HWPanModalPresentableHandler.m in Sources */,
 				38250EE71F74DC3C008B86A2 /* ShapeLayer_BezierParh.m in Sources */,
+				6BCF9A9C244F194B0036E8B4 /* HWBaseViewController.m in Sources */,
 				6B121FA12440A04700BD804F /* ArcVC.m in Sources */,
+				6BCF9A98244F194B0036E8B4 /* UIViewController+PanModalDefault.m in Sources */,
+				6BCF9AA1244F194B0036E8B4 /* HWPanModalPresentationAnimator.m in Sources */,
+				6BCF9A94244F194B0036E8B4 /* HWPanModalPresentationDelegate.m in Sources */,
 				382EA70B1F7367470052BE27 /* ViewController.m in Sources */,
 				382EA7401F73AA390052BE27 /* LayerLoadingAnim.m in Sources */,
+				6BCF9AA4244F194B0036E8B4 /* HWPanIndicatorView.m in Sources */,
 				38149A6A1F749EF5004A8938 /* OppoVC.m in Sources */,
+				6BCF9AA2244F194B0036E8B4 /* UIViewController+PanModalPresenter.m in Sources */,
 				387F80931F8DA47200C0DB10 /* MoveLabelVC.m in Sources */,
+				6BCF9A96244F194B0036E8B4 /* UIViewController+LayoutHelper.m in Sources */,
+				6BCF9AA6244F194B0036E8B4 /* HWPanModalPresentationController.m in Sources */,
+				6BCF9AA0244F194B0036E8B4 /* HWPanModalAnimator.m in Sources */,
+				6BCF9A97244F194B0036E8B4 /* UIScrollView+Helper.m in Sources */,
 				6B07D52020C8C15B00BBB85B /* HWCircleProgressView.m in Sources */,
+				6BCF9A9E244F194B0036E8B4 /* HWPanModalInteractiveAnimator.m in Sources */,
+				6BCF9A95244F194B0036E8B4 /* HWDimmedView.m in Sources */,
+				6BCF9A9A244F194B0036E8B4 /* HWVisualEffectView.m in Sources */,
 				382EA7391F7369C50052BE27 /* TestDrawRect.m in Sources */,
 				389963451F8CC9E80044C2D4 /* PointMoveByCircleLayer.m in Sources */,
+				6BCF9A99244F194B0036E8B4 /* UIView+HW_Frame.m in Sources */,
 				382EA7081F7367470052BE27 /* AppDelegate.m in Sources */,
+				6BCF9A93244F194B0036E8B4 /* HWPanModalContainerView.m in Sources */,
+				6BCF9AA3244F194B0036E8B4 /* HWPanContainerView.m in Sources */,
 				38149A671F749D3C004A8938 /* CircleLayer.m in Sources */,
 				382EA73C1F7394430052BE27 /* LayerDraw.m in Sources */,
 				382EA7051F7367470052BE27 /* main.m in Sources */,
 				6B037DD520D2072000D03148 /* DrawUtils.m in Sources */,
+				6BCF9AA7244F194B0036E8B4 /* KeyValueObserver.m in Sources */,
 				389963411F8CC8810044C2D4 /* PointMoveByCircleVC.m in Sources */,
+				6BCF9A9D244F194B0036E8B4 /* HWShoppingCartPresentingAnimation.m in Sources */,
+				6BCF9A9F244F194B0036E8B4 /* HWPageSheetPresentingAnimation.m in Sources */,
 				6B0BE9A120D10A1E00640AE9 /* SeekBarVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

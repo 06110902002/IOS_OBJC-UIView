@@ -18,6 +18,9 @@
 #import "SeekBarVC.h"
 #import "ArcVC.h"
 
+#import "HWBaseViewController.h"
+#import "UIViewController+PanModalPresenter.h"
+
 @interface ViewController ()<CAAnimationDelegate,CALayerDelegate>
 
 @property(nonatomic,strong) LayerLoadingAnim* layerLoadingAnim;
@@ -87,6 +90,13 @@
     [arcLoad addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:arcLoad];
     
+    UIButton* dragMenu = [[UIButton alloc] initWithFrame:CGRectMake(30, 250, 180, 30)];
+       dragMenu.backgroundColor = [UIColor grayColor];
+       dragMenu.tag = 16;
+       [dragMenu setTitle:@"底部拖拽菜单" forState:UIControlStateNormal];
+       [dragMenu addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+       [self.view addSubview:dragMenu];
+    
     
 }
 
@@ -130,6 +140,12 @@
              [self presentViewController:[[ArcVC alloc] init] animated:true completion:nil];
           }
              break;
+            
+        case 16:{
+            HWBaseViewController* vc = [[HWBaseViewController alloc] init];
+            [self presentPanModal:vc completion:^{}];
+        }
+            break;
             
         default:
             break;
