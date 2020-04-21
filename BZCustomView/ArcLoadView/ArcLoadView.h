@@ -14,6 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)UIBezierPath *path;
 @property(nonatomic,strong)UIView* pointView;
 @property(nonatomic,strong)CAShapeLayer* pointLayer;
+@property(nonatomic,strong)CAShapeLayer* arcLayer;
+@property(nonatomic,strong)UIBezierPath *arcPath;
+
 
 @property(nonatomic,assign) CGFloat screenWidth;
 @property(nonatomic,assign) CGFloat screenHeight;

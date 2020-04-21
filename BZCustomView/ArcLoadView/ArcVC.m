@@ -32,7 +32,7 @@
     
     
     
-    UIButton* btnAnim = [[UIButton alloc] initWithFrame:CGRectMake(180, 240, 180, 30)];
+    UIButton* btnAnim = [[UIButton alloc] initWithFrame:CGRectMake(180, 540, 180, 30)];
        btnAnim.backgroundColor = [UIColor grayColor];
        btnAnim.tag = 13;
        [btnAnim setTitle:@"播放动画" forState:UIControlStateNormal];
