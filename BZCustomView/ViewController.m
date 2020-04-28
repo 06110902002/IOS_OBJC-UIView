@@ -17,6 +17,8 @@
 #import "HWVC.h"
 #import "SeekBarVC.h"
 #import "ArcVC.h"
+#import "ArcIndicatorVC.h"
+#import "StickScrollVC.h"
 
 #import "HWBaseViewController.h"
 #import "UIViewController+PanModalPresenter.h"
@@ -97,6 +99,20 @@
        [dragMenu addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
        [self.view addSubview:dragMenu];
     
+    UIButton* arcIndicator = [[UIButton alloc] initWithFrame:CGRectMake(30, 200, 180, 30)];
+    arcIndicator.backgroundColor = [UIColor grayColor];
+    arcIndicator.tag = 17;
+    [arcIndicator setTitle:@"弧形拖动菜单" forState:UIControlStateNormal];
+    [arcIndicator addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:arcIndicator];
+    
+    UIButton* stickHead = [[UIButton alloc] initWithFrame:CGRectMake(30, 300, 180, 30)];
+    stickHead.backgroundColor = [UIColor grayColor];
+    stickHead.tag = 18;
+    [stickHead setTitle:@"头部滑动悬停" forState:UIControlStateNormal];
+    [stickHead addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:stickHead];
+    
     
 }
 
@@ -145,6 +161,14 @@
             HWBaseViewController* vc = [[HWBaseViewController alloc] init];
             [self presentPanModal:vc completion:^{}];
         }
+            break;
+            
+        case 17:
+            [self presentViewController:[[ArcIndicatorVC alloc] init] animated:true completion:nil];
+            break;
+            
+        case 18:
+            [self.navigationController pushViewController:[[StickScrollVC alloc] init] animated:false];
             break;
             
         default:

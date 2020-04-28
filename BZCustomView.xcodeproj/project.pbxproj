@@ -31,7 +31,16 @@
 		6B0BE9A420D10BCF00640AE9 /* SeekBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0BE9A320D10BCF00640AE9 /* SeekBarView.m */; };
 		6B121FA12440A04700BD804F /* ArcVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B121FA02440A04700BD804F /* ArcVC.m */; };
 		6B121FA42440A1F800BD804F /* ArcLoadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B121FA32440A1F800BD804F /* ArcLoadView.m */; };
+		6B36257D2455730D0099604F /* CircleIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B36257A2455730D0099604F /* CircleIndicatorView.m */; };
+		6B36257E2455730D0099604F /* RectangleIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B36257B2455730D0099604F /* RectangleIndicatorView.m */; };
+		6B362582245574730099604F /* ArcIndicatorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B362581245574730099604F /* ArcIndicatorVC.m */; };
 		6B3E5BD520C7DB15002CB0D9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B3E5BD420C7DB15002CB0D9 /* Default-568h@2x.png */; };
+		6B726B2924582BAD00F0840A /* StickScrollVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B726B2824582BAD00F0840A /* StickScrollVC.m */; };
+		6B726B2C24582C2E00F0840A /* CollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B726B2B24582C2E00F0840A /* CollectionViewLayout.m */; };
+		6B726B2F24582D1E00F0840A /* ItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B726B2E24582D1E00F0840A /* ItemView.m */; };
+		6B726B332458337300F0840A /* UIScrollView+LXBScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B726B322458337300F0840A /* UIScrollView+LXBScrollView.m */; };
+		6B726B36245835A000F0840A /* ScrollNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B726B35245835A000F0840A /* ScrollNavBar.m */; };
+		6B726B3924583A5D00F0840A /* UIView+LXB.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B726B3824583A5D00F0840A /* UIView+LXB.m */; };
 		6BCF9A93244F194B0036E8B4 /* HWPanModalContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A64244F194B0036E8B4 /* HWPanModalContainerView.m */; };
 		6BCF9A94244F194B0036E8B4 /* HWPanModalPresentationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A66244F194B0036E8B4 /* HWPanModalPresentationDelegate.m */; };
 		6BCF9A95244F194B0036E8B4 /* HWDimmedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A67244F194B0036E8B4 /* HWDimmedView.m */; };
@@ -121,7 +130,26 @@
 		6B121FA02440A04700BD804F /* ArcVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ArcVC.m; path = ArcLoadView/ArcVC.m; sourceTree = "<group>"; };
 		6B121FA22440A1F800BD804F /* ArcLoadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ArcLoadView.h; path = ArcLoadView/ArcLoadView.h; sourceTree = "<group>"; };
 		6B121FA32440A1F800BD804F /* ArcLoadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ArcLoadView.m; path = ArcLoadView/ArcLoadView.m; sourceTree = "<group>"; };
+		6B3625792455730D0099604F /* RectangleIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RectangleIndicatorView.h; sourceTree = "<group>"; };
+		6B36257A2455730D0099604F /* CircleIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleIndicatorView.m; sourceTree = "<group>"; };
+		6B36257B2455730D0099604F /* RectangleIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RectangleIndicatorView.m; sourceTree = "<group>"; };
+		6B36257C2455730D0099604F /* CircleIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleIndicatorView.h; sourceTree = "<group>"; };
+		6B362580245574730099604F /* ArcIndicatorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArcIndicatorVC.h; sourceTree = "<group>"; };
+		6B362581245574730099604F /* ArcIndicatorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArcIndicatorVC.m; sourceTree = "<group>"; };
 		6B3E5BD420C7DB15002CB0D9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6B726B2724582BAD00F0840A /* StickScrollVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StickScrollVC.h; sourceTree = "<group>"; };
+		6B726B2824582BAD00F0840A /* StickScrollVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StickScrollVC.m; sourceTree = "<group>"; };
+		6B726B2A24582C2E00F0840A /* CollectionViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewLayout.h; sourceTree = "<group>"; };
+		6B726B2B24582C2E00F0840A /* CollectionViewLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewLayout.m; sourceTree = "<group>"; };
+		6B726B2D24582D1E00F0840A /* ItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemView.h; sourceTree = "<group>"; };
+		6B726B2E24582D1E00F0840A /* ItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemView.m; sourceTree = "<group>"; };
+		6B726B302458329D00F0840A /* MicroTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MicroTool.h; sourceTree = "<group>"; };
+		6B726B312458337300F0840A /* UIScrollView+LXBScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+LXBScrollView.h"; sourceTree = "<group>"; };
+		6B726B322458337300F0840A /* UIScrollView+LXBScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+LXBScrollView.m"; sourceTree = "<group>"; };
+		6B726B34245835A000F0840A /* ScrollNavBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollNavBar.h; sourceTree = "<group>"; };
+		6B726B35245835A000F0840A /* ScrollNavBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollNavBar.m; sourceTree = "<group>"; };
+		6B726B3724583A5D00F0840A /* UIView+LXB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LXB.h"; sourceTree = "<group>"; };
+		6B726B3824583A5D00F0840A /* UIView+LXB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LXB.m"; sourceTree = "<group>"; };
 		6BCF9A61244F194B0036E8B4 /* HWPanModalPresentationUpdateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPanModalPresentationUpdateProtocol.h; sourceTree = "<group>"; };
 		6BCF9A62244F194B0036E8B4 /* HWPanModalPresentable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPanModalPresentable.h; sourceTree = "<group>"; };
 		6BCF9A63244F194B0036E8B4 /* HWPanModalIndicatorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPanModalIndicatorProtocol.h; sourceTree = "<group>"; };
@@ -230,6 +258,8 @@
 		382EA7021F7367470052BE27 /* BZCustomView */ = {
 			isa = PBXGroup;
 			children = (
+				6B726B262458244100F0840A /* stickHead */,
+				6B362578245572E50099604F /* ArcIndicator */,
 				6BCF9A5F244F194B0036E8B4 /* UIPresentationController */,
 				6B121F9E2440A00F00BD804F /* ArcLoadView */,
 				6B037DD620D2072900D03148 /* utils */,
@@ -251,6 +281,7 @@
 				382EA7031F7367470052BE27 /* Supporting Files */,
 				38149A681F749EF5004A8938 /* OppoVC.h */,
 				38149A691F749EF5004A8938 /* OppoVC.m */,
+				6B726B302458329D00F0840A /* MicroTool.h */,
 			);
 			path = BZCustomView;
 			sourceTree = "<group>";
@@ -363,6 +394,46 @@
 				6B121FA32440A1F800BD804F /* ArcLoadView.m */,
 			);
 			name = ArcLoadView;
+			sourceTree = "<group>";
+		};
+		6B362578245572E50099604F /* ArcIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				6B36257F245573220099604F /* img */,
+				6B36257C2455730D0099604F /* CircleIndicatorView.h */,
+				6B36257A2455730D0099604F /* CircleIndicatorView.m */,
+				6B3625792455730D0099604F /* RectangleIndicatorView.h */,
+				6B36257B2455730D0099604F /* RectangleIndicatorView.m */,
+				6B362580245574730099604F /* ArcIndicatorVC.h */,
+				6B362581245574730099604F /* ArcIndicatorVC.m */,
+			);
+			path = ArcIndicator;
+			sourceTree = "<group>";
+		};
+		6B36257F245573220099604F /* img */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = img;
+			sourceTree = "<group>";
+		};
+		6B726B262458244100F0840A /* stickHead */ = {
+			isa = PBXGroup;
+			children = (
+				6B726B2724582BAD00F0840A /* StickScrollVC.h */,
+				6B726B2824582BAD00F0840A /* StickScrollVC.m */,
+				6B726B2A24582C2E00F0840A /* CollectionViewLayout.h */,
+				6B726B2B24582C2E00F0840A /* CollectionViewLayout.m */,
+				6B726B2D24582D1E00F0840A /* ItemView.h */,
+				6B726B2E24582D1E00F0840A /* ItemView.m */,
+				6B726B312458337300F0840A /* UIScrollView+LXBScrollView.h */,
+				6B726B322458337300F0840A /* UIScrollView+LXBScrollView.m */,
+				6B726B34245835A000F0840A /* ScrollNavBar.h */,
+				6B726B35245835A000F0840A /* ScrollNavBar.m */,
+				6B726B3724583A5D00F0840A /* UIView+LXB.h */,
+				6B726B3824583A5D00F0840A /* UIView+LXB.m */,
+			);
+			path = stickHead;
 			sourceTree = "<group>";
 		};
 		6BCF9A5F244F194B0036E8B4 /* UIPresentationController */ = {
@@ -581,6 +652,7 @@
 			files = (
 				6B0BE9A420D10BCF00640AE9 /* SeekBarView.m in Sources */,
 				6B121FA42440A1F800BD804F /* ArcLoadView.m in Sources */,
+				6B726B36245835A000F0840A /* ScrollNavBar.m in Sources */,
 				6B07D51D20C8C13800BBB85B /* HWVC.m in Sources */,
 				6BCF9AA5244F194B0036E8B4 /* HWPanModalContentView.m in Sources */,
 				6BCF9A9B244F194B0036E8B4 /* HWPanModalPresentableHandler.m in Sources */,
@@ -589,6 +661,7 @@
 				6B121FA12440A04700BD804F /* ArcVC.m in Sources */,
 				6BCF9A98244F194B0036E8B4 /* UIViewController+PanModalDefault.m in Sources */,
 				6BCF9AA1244F194B0036E8B4 /* HWPanModalPresentationAnimator.m in Sources */,
+				6B726B2C24582C2E00F0840A /* CollectionViewLayout.m in Sources */,
 				6BCF9A94244F194B0036E8B4 /* HWPanModalPresentationDelegate.m in Sources */,
 				382EA70B1F7367470052BE27 /* ViewController.m in Sources */,
 				382EA7401F73AA390052BE27 /* LayerLoadingAnim.m in Sources */,
@@ -596,6 +669,8 @@
 				38149A6A1F749EF5004A8938 /* OppoVC.m in Sources */,
 				6BCF9AA2244F194B0036E8B4 /* UIViewController+PanModalPresenter.m in Sources */,
 				387F80931F8DA47200C0DB10 /* MoveLabelVC.m in Sources */,
+				6B36257D2455730D0099604F /* CircleIndicatorView.m in Sources */,
+				6B726B332458337300F0840A /* UIScrollView+LXBScrollView.m in Sources */,
 				6BCF9A96244F194B0036E8B4 /* UIViewController+LayoutHelper.m in Sources */,
 				6BCF9AA6244F194B0036E8B4 /* HWPanModalPresentationController.m in Sources */,
 				6BCF9AA0244F194B0036E8B4 /* HWPanModalAnimator.m in Sources */,
@@ -612,9 +687,14 @@
 				6BCF9AA3244F194B0036E8B4 /* HWPanContainerView.m in Sources */,
 				38149A671F749D3C004A8938 /* CircleLayer.m in Sources */,
 				382EA73C1F7394430052BE27 /* LayerDraw.m in Sources */,
+				6B726B2F24582D1E00F0840A /* ItemView.m in Sources */,
+				6B36257E2455730D0099604F /* RectangleIndicatorView.m in Sources */,
+				6B726B3924583A5D00F0840A /* UIView+LXB.m in Sources */,
 				382EA7051F7367470052BE27 /* main.m in Sources */,
+				6B726B2924582BAD00F0840A /* StickScrollVC.m in Sources */,
 				6B037DD520D2072000D03148 /* DrawUtils.m in Sources */,
 				6BCF9AA7244F194B0036E8B4 /* KeyValueObserver.m in Sources */,
+				6B362582245574730099604F /* ArcIndicatorVC.m in Sources */,
 				389963411F8CC8810044C2D4 /* PointMoveByCircleVC.m in Sources */,
 				6BCF9A9D244F194B0036E8B4 /* HWShoppingCartPresentingAnimation.m in Sources */,
 				6BCF9A9F244F194B0036E8B4 /* HWPageSheetPresentingAnimation.m in Sources */,
