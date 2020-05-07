@@ -20,6 +20,7 @@
 #import "ArcIndicatorVC.h"
 #import "StickScrollVC.h"
 #import "RunloopVC.h"
+#import "DataStructVC.h"
 
 #import "HWBaseViewController.h"
 #import "UIViewController+PanModalPresenter.h"
@@ -121,6 +122,13 @@
     [runloop addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:runloop];
     
+    UIButton* dataStruct = [[UIButton alloc] initWithFrame:CGRectMake(230, 350, 180, 30)];
+    dataStruct.backgroundColor = [UIColor grayColor];
+    dataStruct.tag = 20;
+    [dataStruct setTitle:@"数据结构" forState:UIControlStateNormal];
+    [dataStruct addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:dataStruct];
+    
     
 }
 
@@ -180,6 +188,10 @@
             
         case 19:
             [self.navigationController pushViewController:[[RunloopVC alloc] init] animated:false];
+            break;
+            
+        case 20:
+             [self.navigationController pushViewController:[[DataStructVC alloc] init] animated:false];
             break;
             
             
