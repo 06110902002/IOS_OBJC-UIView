@@ -35,6 +35,7 @@
 		6B36257E2455730D0099604F /* RectangleIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B36257B2455730D0099604F /* RectangleIndicatorView.m */; };
 		6B362582245574730099604F /* ArcIndicatorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B362581245574730099604F /* ArcIndicatorVC.m */; };
 		6B3E5BD520C7DB15002CB0D9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B3E5BD420C7DB15002CB0D9 /* Default-568h@2x.png */; };
+		6B4432772462E4830014E255 /* RunloopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4432762462E4830014E255 /* RunloopVC.m */; };
 		6B726B2924582BAD00F0840A /* StickScrollVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B726B2824582BAD00F0840A /* StickScrollVC.m */; };
 		6B726B2C24582C2E00F0840A /* CollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B726B2B24582C2E00F0840A /* CollectionViewLayout.m */; };
 		6B726B2F24582D1E00F0840A /* ItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B726B2E24582D1E00F0840A /* ItemView.m */; };
@@ -137,6 +138,8 @@
 		6B362580245574730099604F /* ArcIndicatorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArcIndicatorVC.h; sourceTree = "<group>"; };
 		6B362581245574730099604F /* ArcIndicatorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArcIndicatorVC.m; sourceTree = "<group>"; };
 		6B3E5BD420C7DB15002CB0D9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6B4432752462E4830014E255 /* RunloopVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunloopVC.h; sourceTree = "<group>"; };
+		6B4432762462E4830014E255 /* RunloopVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunloopVC.m; sourceTree = "<group>"; };
 		6B726B2724582BAD00F0840A /* StickScrollVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StickScrollVC.h; sourceTree = "<group>"; };
 		6B726B2824582BAD00F0840A /* StickScrollVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StickScrollVC.m; sourceTree = "<group>"; };
 		6B726B2A24582C2E00F0840A /* CollectionViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewLayout.h; sourceTree = "<group>"; };
@@ -258,6 +261,7 @@
 		382EA7021F7367470052BE27 /* BZCustomView */ = {
 			isa = PBXGroup;
 			children = (
+				6B4432742462E4650014E255 /* runloop */,
 				6B726B262458244100F0840A /* stickHead */,
 				6B362578245572E50099604F /* ArcIndicator */,
 				6BCF9A5F244F194B0036E8B4 /* UIPresentationController */,
@@ -415,6 +419,15 @@
 			children = (
 			);
 			name = img;
+			sourceTree = "<group>";
+		};
+		6B4432742462E4650014E255 /* runloop */ = {
+			isa = PBXGroup;
+			children = (
+				6B4432752462E4830014E255 /* RunloopVC.h */,
+				6B4432762462E4830014E255 /* RunloopVC.m */,
+			);
+			path = runloop;
 			sourceTree = "<group>";
 		};
 		6B726B262458244100F0840A /* stickHead */ = {
@@ -662,6 +675,7 @@
 				6BCF9A98244F194B0036E8B4 /* UIViewController+PanModalDefault.m in Sources */,
 				6BCF9AA1244F194B0036E8B4 /* HWPanModalPresentationAnimator.m in Sources */,
 				6B726B2C24582C2E00F0840A /* CollectionViewLayout.m in Sources */,
+				6B4432772462E4830014E255 /* RunloopVC.m in Sources */,
 				6BCF9A94244F194B0036E8B4 /* HWPanModalPresentationDelegate.m in Sources */,
 				382EA70B1F7367470052BE27 /* ViewController.m in Sources */,
 				382EA7401F73AA390052BE27 /* LayerLoadingAnim.m in Sources */,

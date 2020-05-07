@@ -19,6 +19,7 @@
 #import "ArcVC.h"
 #import "ArcIndicatorVC.h"
 #import "StickScrollVC.h"
+#import "RunloopVC.h"
 
 #import "HWBaseViewController.h"
 #import "UIViewController+PanModalPresenter.h"
@@ -113,6 +114,13 @@
     [stickHead addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:stickHead];
     
+    UIButton* runloop = [[UIButton alloc] initWithFrame:CGRectMake(230, 300, 180, 30)];
+    runloop.backgroundColor = [UIColor grayColor];
+    runloop.tag = 19;
+    [runloop setTitle:@"启动runloop" forState:UIControlStateNormal];
+    [runloop addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:runloop];
+    
     
 }
 
@@ -121,7 +129,6 @@
     switch (button.tag) {
             
             case 10:{
-            
                 [self presentViewController:[[OppoVC alloc] init] animated:true completion:nil];
             }
             
@@ -170,6 +177,11 @@
         case 18:
             [self.navigationController pushViewController:[[StickScrollVC alloc] init] animated:false];
             break;
+            
+        case 19:
+            [self.navigationController pushViewController:[[RunloopVC alloc] init] animated:false];
+            break;
+            
             
         default:
             break;
@@ -442,5 +454,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+/**
+ static inline function  通常用于一些调用频繁的简单函数
+ */
+static inline CGFloat screenWidth(){
+    return [UIScreen mainScreen].bounds.size.width;
+}
 
 @end
