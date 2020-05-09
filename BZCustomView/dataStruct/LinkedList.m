@@ -46,7 +46,7 @@
 }
 
 -(void)deleteNode:(LinkedList *)node{
-    LinkedList *p = self.next;
+    LinkedList *p = self;
     while (p.next != nil) {
         if ([p.next.data isEqual: node.data]) {
             node.next = p.next.next;

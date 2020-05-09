@@ -8,10 +8,14 @@
 
 #import "DataStructVC.h"
 #import "LinkedList.h"
+#import "QueueArray.h"
+#import "QueueLinkedList.h"
 
 @interface DataStructVC ()
 @property(nonatomic,strong)LinkedList* head;
 @property(nonatomic,assign) NSInteger i;
+@property(nonatomic,strong) QueueArray* queue;
+@property(nonatomic,strong) QueueLinkedList* Linkqueue;
 
 @end
 
@@ -19,6 +23,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UILabel* linked = [[UILabel alloc] initWithFrame:CGRectMake(30, 40, 100, 30)];
+    linked.text = @"链表";
+    linked.backgroundColor = [UIColor grayColor];
+    [self.view addSubview:linked];
+    
     UIButton* btnOppo = [[UIButton alloc] initWithFrame:CGRectMake(30, 100, 130, 30)];
     btnOppo.backgroundColor = [UIColor grayColor];
     btnOppo.tag = 10;
@@ -47,12 +57,61 @@
     [delete addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:delete];
     
-    UIButton*  reverse = [[UIButton alloc] initWithFrame:CGRectMake(30, 250, 130, 30)];
+    UIButton*  reverse = [[UIButton alloc] initWithFrame:CGRectMake(30, 200, 130, 30)];
     reverse.backgroundColor = [UIColor grayColor];
     reverse.tag = 14;
     [reverse setTitle:@"就地逆置" forState:UIControlStateNormal];
     [reverse addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:reverse];
+    
+    UILabel* queenLabel = [[UILabel alloc] initWithFrame:CGRectMake(30, 240, 100, 30)];
+    queenLabel.text = @"队列";
+    queenLabel.backgroundColor = [UIColor grayColor];
+    [self.view addSubview:queenLabel];
+    
+    UIButton*  queenArray = [[UIButton alloc] initWithFrame:CGRectMake(30, 300, 130, 30)];
+   queenArray.backgroundColor = [UIColor grayColor];
+   queenArray.tag = 34;
+   [queenArray setTitle:@"队列数组实现" forState:UIControlStateNormal];
+   [queenArray addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+   [self.view addSubview:queenArray];
+    
+    UIButton*  queenArrayIn = [[UIButton alloc] initWithFrame:CGRectMake(30, 340, 130, 30)];
+    queenArrayIn.backgroundColor = [UIColor grayColor];
+    queenArrayIn.tag = 35;
+    [queenArrayIn setTitle:@"队列数组in" forState:UIControlStateNormal];
+    [queenArrayIn addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:queenArrayIn];
+    
+    UIButton*  queenArrayOut = [[UIButton alloc] initWithFrame:CGRectMake(30, 380, 130, 30)];
+    queenArrayOut.backgroundColor = [UIColor grayColor];
+    queenArrayOut.tag = 36;
+    [queenArrayOut setTitle:@"队列数组Out" forState:UIControlStateNormal];
+    [queenArrayOut addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:queenArrayOut];
+    
+    
+  UIButton*  queenLinked = [[UIButton alloc] initWithFrame:CGRectMake(170, 300, 130, 30)];
+  queenLinked.backgroundColor = [UIColor grayColor];
+  queenLinked.tag = 37;
+  [queenLinked setTitle:@"队列链表实现" forState:UIControlStateNormal];
+  [queenLinked addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+  [self.view addSubview:queenLinked];
+    
+    
+    UIButton*  queenLinkIn = [[UIButton alloc] initWithFrame:CGRectMake(170, 340, 130, 30)];
+    queenLinkIn.backgroundColor = [UIColor grayColor];
+    queenLinkIn.tag = 38;
+    [queenLinkIn setTitle:@"队列链表in" forState:UIControlStateNormal];
+    [queenLinkIn addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:queenLinkIn];
+    
+    UIButton*  queenLinkOut = [[UIButton alloc] initWithFrame:CGRectMake(170, 380, 130, 30)];
+    queenLinkOut.backgroundColor = [UIColor grayColor];
+    queenLinkOut.tag = 39;
+    [queenLinkOut setTitle:@"队列链表Out" forState:UIControlStateNormal];
+    [queenLinkOut addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:queenLinkOut];
 
 }
 -(void)onClick:(UIButton*) button{
@@ -83,8 +142,8 @@
             NSString* data = [NSString stringWithFormat:@"p%ld",self.i];
             LinkedList* node = [self buildNode];
             node.data = data;
-            //[self.head insertAfterNode:node];
-            [self.head insertHead:node];
+            [self.head insertAfterNode:node];
+            //[self.head insertHead:node];
             
             //node.next = self.head.next;
             //self.head.next = node;
@@ -95,7 +154,7 @@
             
         case 13:{
             LinkedList* node = [self buildNode];
-            node.data = @"p2";
+            node.data = @"p0";
             [self.head deleteNode:node];
         }break;
             
@@ -110,6 +169,38 @@
             }
             
         }break;
+            
+        case 34:{
+            [self initQueue];
+            
+        }break;
+            
+        case 35:{
+            [self arrayIn];
+            
+        }break;
+            
+            case 36:{
+                [self arrayOut];
+                
+            }break;
+            
+            
+        case 37:{
+            [self initLinkQueue];
+               
+           }break;
+                   
+       case 38:{
+           [self arrayLinkQueueIn];
+           
+       }break;
+                   
+       case 39:{
+           [self arrayLinkOut];
+           
+       }break;
+                       
             
         default:
             break;
@@ -140,6 +231,63 @@
         pNext = p.next;
     }
     return resultList.next;
+}
+
+
+
+//-----------队列数组实现相关
+-(void) initQueue{
+    self.queue = [[QueueArray alloc] initWithSize:5];
+}
+-(void) arrayIn{
+    if (!self.queue) {
+        return;
+    }
+    [self.queue enqueue:[NSString stringWithFormat:@"A_%ld",self.i++]];
+}
+-(void) arrayOut{
+    if (!self.queue) {
+           return;
+       }
+    @try {
+        NSObject* obj = [self.queue dequeue];
+           NSLog(@"215----------出队元素:%@",obj);
+           [self.queue test];
+    } @catch (NSException *exception) {
+        NSLog(@"223------%@",exception);
+    } @finally {
+        
+    }
+   
+}
+
+
+//队列链表实现
+-(void) initLinkQueue{
+    self.Linkqueue = [[QueueLinkedList alloc] initWithSize:5];
+}
+
+-(void) arrayLinkQueueIn{
+    if (!self.Linkqueue) {
+        return;
+    }
+    [self.Linkqueue enqueue:[NSString stringWithFormat:@"A_%ld",self.i++]];
+}
+
+-(void) arrayLinkOut{
+    if (!self.Linkqueue) {
+           return;
+       }
+    @try {
+        LinkedList* obj = [self.Linkqueue dequeue];
+           NSLog(@"266----------链表出队元素:%@",obj.data);
+           [self.Linkqueue test];
+    } @catch (NSException *exception) {
+        NSLog(@"269------%@",exception);
+    } @finally {
+        
+    }
+   
 }
 
 
