@@ -31,6 +31,9 @@
 		6B0BE9A420D10BCF00640AE9 /* SeekBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0BE9A320D10BCF00640AE9 /* SeekBarView.m */; };
 		6B121FA12440A04700BD804F /* ArcVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B121FA02440A04700BD804F /* ArcVC.m */; };
 		6B121FA42440A1F800BD804F /* ArcLoadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B121FA32440A1F800BD804F /* ArcLoadView.m */; };
+		6B302E392467B1C9003884CF /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B302E382467B1C9003884CF /* Stack.m */; };
+		6B302E3C2467BCE7003884CF /* StackGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B302E3B2467BCE7003884CF /* StackGame.m */; };
+		6B302E3F2467BD9A003884CF /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B302E3E2467BD9A003884CF /* Cell.m */; };
 		6B36257D2455730D0099604F /* CircleIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B36257A2455730D0099604F /* CircleIndicatorView.m */; };
 		6B36257E2455730D0099604F /* RectangleIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B36257B2455730D0099604F /* RectangleIndicatorView.m */; };
 		6B362582245574730099604F /* ArcIndicatorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B362581245574730099604F /* ArcIndicatorVC.m */; };
@@ -135,6 +138,12 @@
 		6B121FA02440A04700BD804F /* ArcVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ArcVC.m; path = ArcLoadView/ArcVC.m; sourceTree = "<group>"; };
 		6B121FA22440A1F800BD804F /* ArcLoadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ArcLoadView.h; path = ArcLoadView/ArcLoadView.h; sourceTree = "<group>"; };
 		6B121FA32440A1F800BD804F /* ArcLoadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ArcLoadView.m; path = ArcLoadView/ArcLoadView.m; sourceTree = "<group>"; };
+		6B302E372467B1C9003884CF /* Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		6B302E382467B1C9003884CF /* Stack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
+		6B302E3A2467BCE7003884CF /* StackGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackGame.h; sourceTree = "<group>"; };
+		6B302E3B2467BCE7003884CF /* StackGame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackGame.m; sourceTree = "<group>"; };
+		6B302E3D2467BD9A003884CF /* Cell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
+		6B302E3E2467BD9A003884CF /* Cell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
 		6B3625792455730D0099604F /* RectangleIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RectangleIndicatorView.h; sourceTree = "<group>"; };
 		6B36257A2455730D0099604F /* CircleIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleIndicatorView.m; sourceTree = "<group>"; };
 		6B36257B2455730D0099604F /* RectangleIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RectangleIndicatorView.m; sourceTree = "<group>"; };
@@ -413,6 +422,30 @@
 			name = ArcLoadView;
 			sourceTree = "<group>";
 		};
+		6B302E352467B1A4003884CF /* queue */ = {
+			isa = PBXGroup;
+			children = (
+				6B44328324657B7C0014E255 /* QueueArray.h */,
+				6B44328424657B7C0014E255 /* QueueArray.m */,
+				6B44328624664C150014E255 /* QueueLinkedList.h */,
+				6B44328724664C150014E255 /* QueueLinkedList.m */,
+			);
+			name = queue;
+			sourceTree = "<group>";
+		};
+		6B302E362467B1B5003884CF /* stack */ = {
+			isa = PBXGroup;
+			children = (
+				6B302E372467B1C9003884CF /* Stack.h */,
+				6B302E382467B1C9003884CF /* Stack.m */,
+				6B302E3A2467BCE7003884CF /* StackGame.h */,
+				6B302E3B2467BCE7003884CF /* StackGame.m */,
+				6B302E3D2467BD9A003884CF /* Cell.h */,
+				6B302E3E2467BD9A003884CF /* Cell.m */,
+			);
+			path = stack;
+			sourceTree = "<group>";
+		};
 		6B362578245572E50099604F /* ArcIndicator */ = {
 			isa = PBXGroup;
 			children = (
@@ -446,14 +479,12 @@
 		6B4432782463A71A0014E255 /* dataStruct */ = {
 			isa = PBXGroup;
 			children = (
+				6B302E362467B1B5003884CF /* stack */,
+				6B302E352467B1A4003884CF /* queue */,
 				6B4432792463A7360014E255 /* DataStructVC.h */,
 				6B44327A2463A7360014E255 /* DataStructVC.m */,
 				6B44327C2463AA5A0014E255 /* LinkedList.h */,
 				6B44327D2463AA5A0014E255 /* LinkedList.m */,
-				6B44328324657B7C0014E255 /* QueueArray.h */,
-				6B44328424657B7C0014E255 /* QueueArray.m */,
-				6B44328624664C150014E255 /* QueueLinkedList.h */,
-				6B44328724664C150014E255 /* QueueLinkedList.m */,
 			);
 			path = dataStruct;
 			sourceTree = "<group>";
@@ -697,7 +728,9 @@
 				6B121FA42440A1F800BD804F /* ArcLoadView.m in Sources */,
 				6B726B36245835A000F0840A /* ScrollNavBar.m in Sources */,
 				6B07D51D20C8C13800BBB85B /* HWVC.m in Sources */,
+				6B302E3C2467BCE7003884CF /* StackGame.m in Sources */,
 				6BCF9AA5244F194B0036E8B4 /* HWPanModalContentView.m in Sources */,
+				6B302E3F2467BD9A003884CF /* Cell.m in Sources */,
 				6BCF9A9B244F194B0036E8B4 /* HWPanModalPresentableHandler.m in Sources */,
 				38250EE71F74DC3C008B86A2 /* ShapeLayer_BezierParh.m in Sources */,
 				6BCF9A9C244F194B0036E8B4 /* HWBaseViewController.m in Sources */,
@@ -744,6 +777,7 @@
 				389963411F8CC8810044C2D4 /* PointMoveByCircleVC.m in Sources */,
 				6BCF9A9D244F194B0036E8B4 /* HWShoppingCartPresentingAnimation.m in Sources */,
 				6BCF9A9F244F194B0036E8B4 /* HWPageSheetPresentingAnimation.m in Sources */,
+				6B302E392467B1C9003884CF /* Stack.m in Sources */,
 				6B0BE9A120D10A1E00640AE9 /* SeekBarVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

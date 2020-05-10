@@ -10,12 +10,16 @@
 #import "LinkedList.h"
 #import "QueueArray.h"
 #import "QueueLinkedList.h"
+#import "Stack.h"
+#import "StackGame.h"
 
 @interface DataStructVC ()
 @property(nonatomic,strong)LinkedList* head;
 @property(nonatomic,assign) NSInteger i;
 @property(nonatomic,strong) QueueArray* queue;
 @property(nonatomic,strong) QueueLinkedList* Linkqueue;
+@property(nonatomic,strong) Stack* stack;
+@property(nonatomic,strong) StackGame* game;
 
 @end
 
@@ -112,6 +116,36 @@
     [queenLinkOut setTitle:@"队列链表Out" forState:UIControlStateNormal];
     [queenLinkOut addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:queenLinkOut];
+    
+    
+    UIButton*  stack = [[UIButton alloc] initWithFrame:CGRectMake(170, 430, 130, 30)];
+    stack.backgroundColor = [UIColor grayColor];
+    stack.tag = 50;
+    [stack setTitle:@"栈实现" forState:UIControlStateNormal];
+    [stack addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:stack];
+      
+      
+      UIButton*  stackIn = [[UIButton alloc] initWithFrame:CGRectMake(170, 470, 130, 30)];
+      stackIn.backgroundColor = [UIColor grayColor];
+      stackIn.tag = 51;
+      [stackIn setTitle:@"入栈" forState:UIControlStateNormal];
+      [stackIn addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+      [self.view addSubview:stackIn];
+      
+      UIButton*  stackOut = [[UIButton alloc] initWithFrame:CGRectMake(170, 510, 130, 30)];
+      stackOut.backgroundColor = [UIColor grayColor];
+      stackOut.tag = 52;
+      [stackOut setTitle:@"出栈" forState:UIControlStateNormal];
+      [stackOut addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+      [self.view addSubview:stackOut];
+    
+    UIButton*  stackGamebtn = [[UIButton alloc] initWithFrame:CGRectMake(170, 550, 130, 30)];
+    stackGamebtn.backgroundColor = [UIColor grayColor];
+    stackGamebtn.tag = 53;
+    [stackGamebtn setTitle:@"栈迷宫游戏" forState:UIControlStateNormal];
+    [stackGamebtn addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:stackGamebtn];
 
 }
 -(void)onClick:(UIButton*) button{
@@ -200,7 +234,23 @@
            [self arrayLinkOut];
            
        }break;
-                       
+            
+        case 50:{
+            [self initStack];
+        }
+            break;
+        case 51:{
+            [self pushStack];
+        }break;
+         case 52:{
+             [self popStack];
+         }break;
+            
+        case 53:{
+            self.game = [[StackGame alloc] init];
+            [self.game queryPath];
+            
+        }break;
             
         default:
             break;
@@ -288,6 +338,34 @@
         
     }
    
+}
+
+/**---------------栈------------*/
+-(void) initStack{
+    if (!self.stack) {
+        self.stack = [[Stack alloc] initWithSize:5];
+    }
+}
+
+-(void) pushStack{
+    if (self.stack) {
+        @try {
+           [self.stack push:[NSString stringWithFormat:@"A_%ld",self.i++]];
+
+        } @catch (NSException *exception) {
+            NSLog(@"341------:%@",exception);
+        } @finally {
+            
+        }
+    }
+}
+
+-(void) popStack{
+    if (self.stack) {
+        NSObject* e = [self.stack pop];
+        NSLog(@"344-----------出栈元素：%@  栈空：%d  栈长度L:%ld",e,[self.stack isEmpty],[self.stack count]);
+    
+    }
 }
 
 
