@@ -53,4 +53,13 @@
     return self.array.count;
 }
 
+-(void) test{
+    
+    printf("58--------栈中余下元素:");
+    for (NSInteger i = self.array.count - 1; i >= 0; i --) {
+        printf("%s",[[self.array objectAtIndex:i] UTF8String]);
+    }
+    printf("\n");
+}
+
 @end

@@ -70,6 +70,7 @@
 		6BCF9AA5244F194B0036E8B4 /* HWPanModalContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A8E244F194B0036E8B4 /* HWPanModalContentView.m */; };
 		6BCF9AA6244F194B0036E8B4 /* HWPanModalPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A8F244F194B0036E8B4 /* HWPanModalPresentationController.m */; };
 		6BCF9AA7244F194B0036E8B4 /* KeyValueObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A92244F194B0036E8B4 /* KeyValueObserver.m */; };
+		6BE65B952468F87B005861C2 /* DelimiterMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE65B942468F87B005861C2 /* DelimiterMatch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -222,6 +223,8 @@
 		6BCF9A90244F194B0036E8B4 /* UIViewController+PanModalPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PanModalPresenter.h"; sourceTree = "<group>"; };
 		6BCF9A91244F194B0036E8B4 /* HWShoppingCartPresentingAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWShoppingCartPresentingAnimation.h; sourceTree = "<group>"; };
 		6BCF9A92244F194B0036E8B4 /* KeyValueObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyValueObserver.m; sourceTree = "<group>"; };
+		6BE65B932468F87B005861C2 /* DelimiterMatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelimiterMatch.h; sourceTree = "<group>"; };
+		6BE65B942468F87B005861C2 /* DelimiterMatch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelimiterMatch.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -436,6 +439,7 @@
 		6B302E362467B1B5003884CF /* stack */ = {
 			isa = PBXGroup;
 			children = (
+				6BE65B922468F83F005861C2 /* delimiterMatch */,
 				6B302E372467B1C9003884CF /* Stack.h */,
 				6B302E382467B1C9003884CF /* Stack.m */,
 				6B302E3A2467BCE7003884CF /* StackGame.h */,
@@ -587,6 +591,15 @@
 			path = animator;
 			sourceTree = "<group>";
 		};
+		6BE65B922468F83F005861C2 /* delimiterMatch */ = {
+			isa = PBXGroup;
+			children = (
+				6BE65B932468F87B005861C2 /* DelimiterMatch.h */,
+				6BE65B942468F87B005861C2 /* DelimiterMatch.m */,
+			);
+			name = delimiterMatch;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -731,6 +744,7 @@
 				6B302E3C2467BCE7003884CF /* StackGame.m in Sources */,
 				6BCF9AA5244F194B0036E8B4 /* HWPanModalContentView.m in Sources */,
 				6B302E3F2467BD9A003884CF /* Cell.m in Sources */,
+				6BE65B952468F87B005861C2 /* DelimiterMatch.m in Sources */,
 				6BCF9A9B244F194B0036E8B4 /* HWPanModalPresentableHandler.m in Sources */,
 				38250EE71F74DC3C008B86A2 /* ShapeLayer_BezierParh.m in Sources */,
 				6BCF9A9C244F194B0036E8B4 /* HWBaseViewController.m in Sources */,

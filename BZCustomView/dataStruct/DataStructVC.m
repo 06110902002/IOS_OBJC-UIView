@@ -12,6 +12,7 @@
 #import "QueueLinkedList.h"
 #import "Stack.h"
 #import "StackGame.h"
+#import "DelimiterMatch.h"
 
 @interface DataStructVC ()
 @property(nonatomic,strong)LinkedList* head;
@@ -20,6 +21,7 @@
 @property(nonatomic,strong) QueueLinkedList* Linkqueue;
 @property(nonatomic,strong) Stack* stack;
 @property(nonatomic,strong) StackGame* game;
+@property(nonatomic,strong) DelimiterMatch* delimiterMatch;
 
 @end
 
@@ -146,6 +148,14 @@
     [stackGamebtn setTitle:@"栈迷宫游戏" forState:UIControlStateNormal];
     [stackGamebtn addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:stackGamebtn];
+    
+    
+    UIButton*  match = [[UIButton alloc] initWithFrame:CGRectMake(30, 430, 130, 30)];
+    match.backgroundColor = [UIColor grayColor];
+    match.tag = 54;
+    [match setTitle:@"符号匹配" forState:UIControlStateNormal];
+    [match addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:match];
 
 }
 -(void)onClick:(UIButton*) button{
@@ -250,6 +260,10 @@
             self.game = [[StackGame alloc] init];
             [self.game queryPath];
             
+        }break;
+            
+        case 54:{
+            [self testMatch];
         }break;
             
         default:
@@ -366,6 +380,14 @@
         NSLog(@"344-----------出栈元素：%@  栈空：%d  栈长度L:%ld",e,[self.stack isEmpty],[self.stack count]);
     
     }
+}
+
+//栈实现符号匹配
+-(void) testMatch{
+    if (!self.delimiterMatch) {
+        self.delimiterMatch = [[DelimiterMatch alloc] init];
+    }
+    [self.delimiterMatch match:@"(liu{09f[0]9-}=)"];
 }
 
 

@@ -30,7 +30,7 @@ typedef void(^StackBlock)(id obj);
 -(NSInteger) count;
 
 
-
+-(void) test;
 
 
 

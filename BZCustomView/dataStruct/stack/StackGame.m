@@ -47,7 +47,6 @@
     self.curCell =   [[Cell alloc] init:3 y:3];
     self.enterCell = [[Cell alloc] init:3 y:3];
     self.exitCell =  [[Cell alloc] init:2 y:4];
-    
     self.storeArray = [[NSMutableArray alloc] init];
     
     for (int i = 0 ; i < 5; i ++) {
@@ -60,13 +59,14 @@
             NSString* tmp = [[self.mazeArray objectAtIndex:i] objectAtIndex:j];
             if([tmp isEqualToString:@"0"] || [tmp isEqualToString:@"2"] || [tmp isEqualToString:@"s"]){
                 [[self.storeArray objectAtIndex:i] addObject:tmp];
+                //self.storeArray[i][j] = tmp;
             }else{
                  [[self.storeArray objectAtIndex:i] addObject:@"1"];
+                //self.storeArray[i][j] = @"1"; 也可以使用下标的方式访问
             }
             
         }
     }
-    
 }
 
 -(void) pushUnVisited:(NSInteger)x y:(NSInteger)y{
