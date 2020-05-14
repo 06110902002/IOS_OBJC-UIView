@@ -24,6 +24,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(void) test;
 
+-(NSInteger) length;
+
 @end
 
 NS_ASSUME_NONNULL_END

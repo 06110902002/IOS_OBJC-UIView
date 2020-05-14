@@ -41,6 +41,14 @@
     return nil;
 }
 
+- (NSObject *)top{
+    if(self.array){
+        NSObject* lastObj = self.array.lastObject;
+        return lastObj;
+    }
+    return nil;
+}
+
 -(BOOL) isEmpty{
     return !self.array.count;
 }

@@ -71,6 +71,12 @@
 		6BCF9AA6244F194B0036E8B4 /* HWPanModalPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A8F244F194B0036E8B4 /* HWPanModalPresentationController.m */; };
 		6BCF9AA7244F194B0036E8B4 /* KeyValueObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A92244F194B0036E8B4 /* KeyValueObserver.m */; };
 		6BE65B952468F87B005861C2 /* DelimiterMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE65B942468F87B005861C2 /* DelimiterMatch.m */; };
+		6BE65B9924693209005861C2 /* AddLargeNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE65B9824693209005861C2 /* AddLargeNumber.m */; };
+		6BE65B9D2469508D005861C2 /* HexTranseMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE65B9C2469508D005861C2 /* HexTranseMgr.m */; };
+		6BE65BA1246A4C4A005861C2 /* TreeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE65BA0246A4C4A005861C2 /* TreeVC.m */; };
+		6BE65BA4246A4D00005861C2 /* TreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE65BA3246A4D00005861C2 /* TreeNode.m */; };
+		6BE65BA7246A5118005861C2 /* BinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE65BA6246A5118005861C2 /* BinaryTree.m */; };
+		6BE65BAB246D2488005861C2 /* SortVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE65BAA246D2488005861C2 /* SortVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -225,6 +231,18 @@
 		6BCF9A92244F194B0036E8B4 /* KeyValueObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyValueObserver.m; sourceTree = "<group>"; };
 		6BE65B932468F87B005861C2 /* DelimiterMatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelimiterMatch.h; sourceTree = "<group>"; };
 		6BE65B942468F87B005861C2 /* DelimiterMatch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelimiterMatch.m; sourceTree = "<group>"; };
+		6BE65B9724693209005861C2 /* AddLargeNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddLargeNumber.h; sourceTree = "<group>"; };
+		6BE65B9824693209005861C2 /* AddLargeNumber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddLargeNumber.m; sourceTree = "<group>"; };
+		6BE65B9B2469508D005861C2 /* HexTranseMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HexTranseMgr.h; sourceTree = "<group>"; };
+		6BE65B9C2469508D005861C2 /* HexTranseMgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HexTranseMgr.m; sourceTree = "<group>"; };
+		6BE65B9F246A4C4A005861C2 /* TreeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TreeVC.h; sourceTree = "<group>"; };
+		6BE65BA0246A4C4A005861C2 /* TreeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TreeVC.m; sourceTree = "<group>"; };
+		6BE65BA2246A4D00005861C2 /* TreeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TreeNode.h; sourceTree = "<group>"; };
+		6BE65BA3246A4D00005861C2 /* TreeNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TreeNode.m; sourceTree = "<group>"; };
+		6BE65BA5246A5118005861C2 /* BinaryTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryTree.h; sourceTree = "<group>"; };
+		6BE65BA6246A5118005861C2 /* BinaryTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BinaryTree.m; sourceTree = "<group>"; };
+		6BE65BA9246D2488005861C2 /* SortVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortVC.h; sourceTree = "<group>"; };
+		6BE65BAA246D2488005861C2 /* SortVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -439,6 +457,8 @@
 		6B302E362467B1B5003884CF /* stack */ = {
 			isa = PBXGroup;
 			children = (
+				6BE65B9A24695066005861C2 /* hexTrans */,
+				6BE65B96246931BC005861C2 /* addLargeNum */,
 				6BE65B922468F83F005861C2 /* delimiterMatch */,
 				6B302E372467B1C9003884CF /* Stack.h */,
 				6B302E382467B1C9003884CF /* Stack.m */,
@@ -483,6 +503,8 @@
 		6B4432782463A71A0014E255 /* dataStruct */ = {
 			isa = PBXGroup;
 			children = (
+				6BE65BA8246D2457005861C2 /* sort */,
+				6BE65B9E246A4C2E005861C2 /* tree */,
 				6B302E362467B1B5003884CF /* stack */,
 				6B302E352467B1A4003884CF /* queue */,
 				6B4432792463A7360014E255 /* DataStructVC.h */,
@@ -598,6 +620,46 @@
 				6BE65B942468F87B005861C2 /* DelimiterMatch.m */,
 			);
 			name = delimiterMatch;
+			sourceTree = "<group>";
+		};
+		6BE65B96246931BC005861C2 /* addLargeNum */ = {
+			isa = PBXGroup;
+			children = (
+				6BE65B9724693209005861C2 /* AddLargeNumber.h */,
+				6BE65B9824693209005861C2 /* AddLargeNumber.m */,
+			);
+			path = addLargeNum;
+			sourceTree = "<group>";
+		};
+		6BE65B9A24695066005861C2 /* hexTrans */ = {
+			isa = PBXGroup;
+			children = (
+				6BE65B9B2469508D005861C2 /* HexTranseMgr.h */,
+				6BE65B9C2469508D005861C2 /* HexTranseMgr.m */,
+			);
+			name = hexTrans;
+			sourceTree = "<group>";
+		};
+		6BE65B9E246A4C2E005861C2 /* tree */ = {
+			isa = PBXGroup;
+			children = (
+				6BE65B9F246A4C4A005861C2 /* TreeVC.h */,
+				6BE65BA0246A4C4A005861C2 /* TreeVC.m */,
+				6BE65BA2246A4D00005861C2 /* TreeNode.h */,
+				6BE65BA3246A4D00005861C2 /* TreeNode.m */,
+				6BE65BA5246A5118005861C2 /* BinaryTree.h */,
+				6BE65BA6246A5118005861C2 /* BinaryTree.m */,
+			);
+			name = tree;
+			sourceTree = "<group>";
+		};
+		6BE65BA8246D2457005861C2 /* sort */ = {
+			isa = PBXGroup;
+			children = (
+				6BE65BA9246D2488005861C2 /* SortVC.h */,
+				6BE65BAA246D2488005861C2 /* SortVC.m */,
+			);
+			path = sort;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -754,6 +816,7 @@
 				6B726B2C24582C2E00F0840A /* CollectionViewLayout.m in Sources */,
 				6B4432772462E4830014E255 /* RunloopVC.m in Sources */,
 				6BCF9A94244F194B0036E8B4 /* HWPanModalPresentationDelegate.m in Sources */,
+				6BE65BA7246A5118005861C2 /* BinaryTree.m in Sources */,
 				382EA70B1F7367470052BE27 /* ViewController.m in Sources */,
 				382EA7401F73AA390052BE27 /* LayerLoadingAnim.m in Sources */,
 				6BCF9AA4244F194B0036E8B4 /* HWPanIndicatorView.m in Sources */,
@@ -766,8 +829,11 @@
 				6BCF9AA6244F194B0036E8B4 /* HWPanModalPresentationController.m in Sources */,
 				6BCF9AA0244F194B0036E8B4 /* HWPanModalAnimator.m in Sources */,
 				6BCF9A97244F194B0036E8B4 /* UIScrollView+Helper.m in Sources */,
+				6BE65BA1246A4C4A005861C2 /* TreeVC.m in Sources */,
 				6B07D52020C8C15B00BBB85B /* HWCircleProgressView.m in Sources */,
 				6B44327B2463A7360014E255 /* DataStructVC.m in Sources */,
+				6BE65B9924693209005861C2 /* AddLargeNumber.m in Sources */,
+				6BE65BAB246D2488005861C2 /* SortVC.m in Sources */,
 				6BCF9A9E244F194B0036E8B4 /* HWPanModalInteractiveAnimator.m in Sources */,
 				6BCF9A95244F194B0036E8B4 /* HWDimmedView.m in Sources */,
 				6B44327E2463AA5A0014E255 /* LinkedList.m in Sources */,
@@ -787,6 +853,8 @@
 				6B726B2924582BAD00F0840A /* StickScrollVC.m in Sources */,
 				6B037DD520D2072000D03148 /* DrawUtils.m in Sources */,
 				6BCF9AA7244F194B0036E8B4 /* KeyValueObserver.m in Sources */,
+				6BE65B9D2469508D005861C2 /* HexTranseMgr.m in Sources */,
+				6BE65BA4246A4D00005861C2 /* TreeNode.m in Sources */,
 				6B362582245574730099604F /* ArcIndicatorVC.m in Sources */,
 				389963411F8CC8810044C2D4 /* PointMoveByCircleVC.m in Sources */,
 				6BCF9A9D244F194B0036E8B4 /* HWShoppingCartPresentingAnimation.m in Sources */,

@@ -13,6 +13,10 @@
 #import "Stack.h"
 #import "StackGame.h"
 #import "DelimiterMatch.h"
+#import "AddLargeNumber.h"
+#import "HexTranseMgr.h"
+#import "TreeVC.h"
+#import "SortVC.h"
 
 @interface DataStructVC ()
 @property(nonatomic,strong)LinkedList* head;
@@ -22,6 +26,8 @@
 @property(nonatomic,strong) Stack* stack;
 @property(nonatomic,strong) StackGame* game;
 @property(nonatomic,strong) DelimiterMatch* delimiterMatch;
+@property(nonatomic,strong) AddLargeNumber* addLargeNum;
+@property(nonatomic,strong) HexTranseMgr* hexTranseMgr;
 
 @end
 
@@ -156,6 +162,34 @@
     [match setTitle:@"符号匹配" forState:UIControlStateNormal];
     [match addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:match];
+    
+    UIButton*  largeNumber = [[UIButton alloc] initWithFrame:CGRectMake(30, 470, 130, 30)];
+    largeNumber.backgroundColor = [UIColor grayColor];
+    largeNumber.tag = 55;
+    [largeNumber setTitle:@"大数相加" forState:UIControlStateNormal];
+    [largeNumber addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:largeNumber];
+    
+    UIButton*  hexTrans = [[UIButton alloc] initWithFrame:CGRectMake(30, 510, 130, 30)];
+    hexTrans.backgroundColor = [UIColor grayColor];
+    hexTrans.tag = 56;
+    [hexTrans setTitle:@"进制转换" forState:UIControlStateNormal];
+    [hexTrans addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:hexTrans];
+    
+    UIButton*  tree = [[UIButton alloc] initWithFrame:CGRectMake(30, 550, 130, 30)];
+    tree.backgroundColor = [UIColor grayColor];
+    tree.tag = 59;
+    [tree setTitle:@"树" forState:UIControlStateNormal];
+    [tree addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:tree];
+    
+    UIButton*  sort = [[UIButton alloc] initWithFrame:CGRectMake(30, 590, 130, 30)];
+    sort.backgroundColor = [UIColor grayColor];
+    sort.tag = 60;
+    [sort setTitle:@"排序算法" forState:UIControlStateNormal];
+    [sort addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:sort];
 
 }
 -(void)onClick:(UIButton*) button{
@@ -264,6 +298,22 @@
             
         case 54:{
             [self testMatch];
+        }break;
+            
+        case 55:{
+            [self testLargeNumberAdd];
+        }break;
+            
+        case 56:{
+            [self hexTaran];
+        }break;
+            
+        case 59:{
+            [self.navigationController pushViewController:[[TreeVC alloc] init] animated:false];
+        }break;
+            
+        case 60:{
+            [self.navigationController pushViewController:[[SortVC alloc] init] animated:false];
         }break;
             
         default:
@@ -388,6 +438,24 @@
         self.delimiterMatch = [[DelimiterMatch alloc] init];
     }
     [self.delimiterMatch match:@"(liu{09f[0]9-}=)"];
+}
+
+//栈实现大数相加
+-(void) testLargeNumberAdd{
+    if(!self.addLargeNum){
+        self.addLargeNum = [[AddLargeNumber alloc] init];
+    }
+    NSString* result = [self.addLargeNum addLargeNumber:@"592" number2:@"13784"];
+    NSLog(@"412--------add result:%@",result);
+}
+
+//栈实现进制转换
+-(void) hexTaran{
+    if (!self.hexTranseMgr) {
+        self.hexTranseMgr = [[HexTranseMgr alloc] init];
+    }
+    [self.hexTranseMgr decimal2AnyHex:31 withType:4];
+    [self.hexTranseMgr anyHex2Decimal:@"133" withType:4];
 }
 
 

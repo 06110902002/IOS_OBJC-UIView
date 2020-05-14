@@ -11,6 +11,8 @@
 @interface StackGame()
 @property(nonatomic,strong) NSArray* mazeArray;
 @property(nonatomic,strong) NSMutableArray* storeArray;  //用来存放访问过的数组
+
+@property(nonatomic,strong) NSMutableArray* tiguiTestArray;
 @property(nonatomic,assign) NSInteger row,col;
 @property(nonatomic,assign) NSInteger visited; //代表访问过的标签
 @property(nonatomic,assign) NSInteger wall;
@@ -48,9 +50,13 @@
     self.enterCell = [[Cell alloc] init:3 y:3];
     self.exitCell =  [[Cell alloc] init:2 y:4];
     self.storeArray = [[NSMutableArray alloc] init];
+    self.tiguiTestArray = [[NSMutableArray alloc] init];
     
     for (int i = 0 ; i < 5; i ++) {
         [self.storeArray addObject:[[NSMutableArray alloc] init]];
+        
+        [self.tiguiTestArray addObject:[[NSMutableArray alloc] init]];
+
     }
     
     for (int i = 0; i < 5; i ++) {
@@ -64,7 +70,7 @@
                  [[self.storeArray objectAtIndex:i] addObject:@"1"];
                 //self.storeArray[i][j] = @"1"; 也可以使用下标的方式访问
             }
-            
+            self.tiguiTestArray[i][j] = tmp;
         }
     }
 }
@@ -111,6 +117,63 @@
     NSMutableArray* rowarray = [self.storeArray objectAtIndex:self.curCell.x]; //将最后一个结点置为走过，真实的路径可以不需要此步
     [rowarray replaceObjectAtIndex:self.curCell.y withObject:@"."];
     [self printPath];
+}
+
+
+-(void) testDigui{
+    [self queryPath:self.tiguiTestArray curPos:self.curCell.x curPosY:self.curCell.y];
+}
+
+-(BOOL) queryPath:(NSMutableArray*) array curPos:(NSInteger)x curPosY:(NSInteger)y{
+    if ([array[x][y] isEqual: @"2"]) {
+        NSLog(@"119-------成功走出迷宫");
+        array[x][y] = @".";
+        for (int i = 0; i < 5; i ++) {
+            for (int j = 0 ; j < 6; j ++){
+                printf("%s",[array[i][j] UTF8String]);
+            }
+             printf("\n");
+        }
+        return true;
+    }else if([array[x][y] isEqual: @"0"] || [array[x][y] isEqual: @"s"]){
+        array[x][y] = @".";
+        for (int i = 0; i < 5; i ++) {
+            for (int j = 0 ; j < 6; j ++){
+                printf("%s",[array[i][j] UTF8String]);
+            }
+             printf("\n");
+        }
+       
+        if ([array[x - 1][y] isEqual:@"0"] ) {
+            NSLog(@"134-------当前位置x : %ld  y: %ld ",x - 1, y);
+            [self queryPath:array curPos:x - 1 curPosY:y];
+            return true;
+        }
+        else if ([array[x][y - 1] isEqual:@"0"]) {
+            NSLog(@"138-------当前位置x : %ld  y: %ld ",x, y - 1);
+            [self queryPath:array curPos:x curPosY:y - 1];
+            return true;
+        }
+        
+        else if ([array[x + 1][y] isEqual:@"0"]) {
+            NSLog(@"143-------当前位置x : %ld  y: %ld ",x + 1, y);
+            [self queryPath:array curPos:x + 1 curPosY:y];
+            return true;
+        }
+        else if ([array[x][y + 1] isEqual:@"0"]) {
+            NSLog(@"147-------当前位置x : %ld  y: %ld ",x, y + 1);
+            [self queryPath:array curPos:x curPosY:y + 1];
+            return true;
+        }else{
+            array[x][y] = @"1";
+            return false;
+        }
+    }else{
+        NSLog(@"154-------当前位置不通x %ld  y:%ld",x,y);
+        array[x][y] = @"0";
+        return false;
+    }
+    
 }
 
 -(void) printPath{

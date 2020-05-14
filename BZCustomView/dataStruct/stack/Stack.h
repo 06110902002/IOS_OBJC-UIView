@@ -21,6 +21,8 @@ typedef void(^StackBlock)(id obj);
 
 -(void) push:(NSObject*) e;
 
+
+/// 弹出栈顶元素，弹出之后在原栈中删除此元素
 -(NSObject*) pop;
 
 -(BOOL) isFull;
@@ -29,8 +31,11 @@ typedef void(^StackBlock)(id obj);
 
 -(NSInteger) count;
 
-
 -(void) test;
+
+
+/// 取栈顶元素，但不在原栈中删除
+-(NSObject*) top;
 
 
 

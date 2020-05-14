@@ -69,6 +69,9 @@
 - (BOOL)isEmpty{
     return self.first == -1;
 }
+-(NSInteger) length{
+    return self.array.count;
+}
 
 -(void) test{
     [self.array enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop){

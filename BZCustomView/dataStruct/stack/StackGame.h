@@ -23,6 +23,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(void) queryPath;
 
+
+
+
+-(void) testDigui;
+
+///  不用栈，使用递归实现迷宫
+/// @param array 数组
+/// @param cell  当前位置
+-(BOOL) queryPath:(NSMutableArray*) array curPos:(NSInteger)x curPosY:(NSInteger)y;
+
 @end
 
 NS_ASSUME_NONNULL_END
