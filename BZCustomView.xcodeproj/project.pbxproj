@@ -43,12 +43,15 @@
 		6B44327E2463AA5A0014E255 /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B44327D2463AA5A0014E255 /* LinkedList.m */; };
 		6B44328524657B7C0014E255 /* QueueArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B44328424657B7C0014E255 /* QueueArray.m */; };
 		6B44328824664C150014E255 /* QueueLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B44328724664C150014E255 /* QueueLinkedList.m */; };
+		6B6B6908247666010039D88E /* UIView+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B6B6907247666010039D88E /* UIView+Resize.m */; };
+		6B6B690B24766A8F0039D88E /* ScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B6B690A24766A8F0039D88E /* ScrollLabel.m */; };
 		6B726B2924582BAD00F0840A /* StickScrollVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B726B2824582BAD00F0840A /* StickScrollVC.m */; };
 		6B726B2C24582C2E00F0840A /* CollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B726B2B24582C2E00F0840A /* CollectionViewLayout.m */; };
 		6B726B2F24582D1E00F0840A /* ItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B726B2E24582D1E00F0840A /* ItemView.m */; };
 		6B726B332458337300F0840A /* UIScrollView+LXBScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B726B322458337300F0840A /* UIScrollView+LXBScrollView.m */; };
 		6B726B36245835A000F0840A /* ScrollNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B726B35245835A000F0840A /* ScrollNavBar.m */; };
 		6B726B3924583A5D00F0840A /* UIView+LXB.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B726B3824583A5D00F0840A /* UIView+LXB.m */; };
+		6B73FDE82473F7F900145FA8 /* SubStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B73FDE72473F7F900145FA8 /* SubStack.m */; };
 		6BCF9A93244F194B0036E8B4 /* HWPanModalContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A64244F194B0036E8B4 /* HWPanModalContainerView.m */; };
 		6BCF9A94244F194B0036E8B4 /* HWPanModalPresentationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A66244F194B0036E8B4 /* HWPanModalPresentationDelegate.m */; };
 		6BCF9A95244F194B0036E8B4 /* HWDimmedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A67244F194B0036E8B4 /* HWDimmedView.m */; };
@@ -168,6 +171,10 @@
 		6B44328424657B7C0014E255 /* QueueArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QueueArray.m; sourceTree = "<group>"; };
 		6B44328624664C150014E255 /* QueueLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueueLinkedList.h; sourceTree = "<group>"; };
 		6B44328724664C150014E255 /* QueueLinkedList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QueueLinkedList.m; sourceTree = "<group>"; };
+		6B6B6906247666010039D88E /* UIView+Resize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Resize.h"; sourceTree = "<group>"; };
+		6B6B6907247666010039D88E /* UIView+Resize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Resize.m"; sourceTree = "<group>"; };
+		6B6B690924766A8F0039D88E /* ScrollLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollLabel.h; sourceTree = "<group>"; };
+		6B6B690A24766A8F0039D88E /* ScrollLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollLabel.m; sourceTree = "<group>"; };
 		6B726B2724582BAD00F0840A /* StickScrollVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StickScrollVC.h; sourceTree = "<group>"; };
 		6B726B2824582BAD00F0840A /* StickScrollVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StickScrollVC.m; sourceTree = "<group>"; };
 		6B726B2A24582C2E00F0840A /* CollectionViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewLayout.h; sourceTree = "<group>"; };
@@ -181,6 +188,8 @@
 		6B726B35245835A000F0840A /* ScrollNavBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollNavBar.m; sourceTree = "<group>"; };
 		6B726B3724583A5D00F0840A /* UIView+LXB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LXB.h"; sourceTree = "<group>"; };
 		6B726B3824583A5D00F0840A /* UIView+LXB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LXB.m"; sourceTree = "<group>"; };
+		6B73FDE62473F7F900145FA8 /* SubStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubStack.h; sourceTree = "<group>"; };
+		6B73FDE72473F7F900145FA8 /* SubStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubStack.m; sourceTree = "<group>"; };
 		6BCF9A61244F194B0036E8B4 /* HWPanModalPresentationUpdateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPanModalPresentationUpdateProtocol.h; sourceTree = "<group>"; };
 		6BCF9A62244F194B0036E8B4 /* HWPanModalPresentable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPanModalPresentable.h; sourceTree = "<group>"; };
 		6BCF9A63244F194B0036E8B4 /* HWPanModalIndicatorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPanModalIndicatorProtocol.h; sourceTree = "<group>"; };
@@ -366,6 +375,8 @@
 				382EA7381F7369C50052BE27 /* TestDrawRect.m */,
 				382EA73A1F7394430052BE27 /* LayerDraw.h */,
 				382EA73B1F7394430052BE27 /* LayerDraw.m */,
+				6B6B6906247666010039D88E /* UIView+Resize.h */,
+				6B6B6907247666010039D88E /* UIView+Resize.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -384,6 +395,7 @@
 		387F80901F8DA43A00C0DB10 /* movelabel */ = {
 			isa = PBXGroup;
 			children = (
+				6B6B6903247634CC0039D88E /* widgt */,
 				387F80911F8DA47200C0DB10 /* MoveLabelVC.h */,
 				387F80921F8DA47200C0DB10 /* MoveLabelVC.m */,
 			);
@@ -513,6 +525,15 @@
 				6B44327D2463AA5A0014E255 /* LinkedList.m */,
 			);
 			path = dataStruct;
+			sourceTree = "<group>";
+		};
+		6B6B6903247634CC0039D88E /* widgt */ = {
+			isa = PBXGroup;
+			children = (
+				6B6B690924766A8F0039D88E /* ScrollLabel.h */,
+				6B6B690A24766A8F0039D88E /* ScrollLabel.m */,
+			);
+			path = widgt;
 			sourceTree = "<group>";
 		};
 		6B726B262458244100F0840A /* stickHead */ = {
@@ -658,6 +679,8 @@
 			children = (
 				6BE65BA9246D2488005861C2 /* SortVC.h */,
 				6BE65BAA246D2488005861C2 /* SortVC.m */,
+				6B73FDE62473F7F900145FA8 /* SubStack.h */,
+				6B73FDE72473F7F900145FA8 /* SubStack.m */,
 			);
 			path = sort;
 			sourceTree = "<group>";
@@ -803,6 +826,7 @@
 				6B121FA42440A1F800BD804F /* ArcLoadView.m in Sources */,
 				6B726B36245835A000F0840A /* ScrollNavBar.m in Sources */,
 				6B07D51D20C8C13800BBB85B /* HWVC.m in Sources */,
+				6B6B690B24766A8F0039D88E /* ScrollLabel.m in Sources */,
 				6B302E3C2467BCE7003884CF /* StackGame.m in Sources */,
 				6BCF9AA5244F194B0036E8B4 /* HWPanModalContentView.m in Sources */,
 				6B302E3F2467BD9A003884CF /* Cell.m in Sources */,
@@ -828,6 +852,7 @@
 				6BCF9A96244F194B0036E8B4 /* UIViewController+LayoutHelper.m in Sources */,
 				6BCF9AA6244F194B0036E8B4 /* HWPanModalPresentationController.m in Sources */,
 				6BCF9AA0244F194B0036E8B4 /* HWPanModalAnimator.m in Sources */,
+				6B73FDE82473F7F900145FA8 /* SubStack.m in Sources */,
 				6BCF9A97244F194B0036E8B4 /* UIScrollView+Helper.m in Sources */,
 				6BE65BA1246A4C4A005861C2 /* TreeVC.m in Sources */,
 				6B07D52020C8C15B00BBB85B /* HWCircleProgressView.m in Sources */,
@@ -844,6 +869,7 @@
 				382EA7081F7367470052BE27 /* AppDelegate.m in Sources */,
 				6BCF9A93244F194B0036E8B4 /* HWPanModalContainerView.m in Sources */,
 				6BCF9AA3244F194B0036E8B4 /* HWPanContainerView.m in Sources */,
+				6B6B6908247666010039D88E /* UIView+Resize.m in Sources */,
 				38149A671F749D3C004A8938 /* CircleLayer.m in Sources */,
 				382EA73C1F7394430052BE27 /* LayerDraw.m in Sources */,
 				6B726B2F24582D1E00F0840A /* ItemView.m in Sources */,

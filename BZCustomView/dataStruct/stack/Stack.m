@@ -70,4 +70,8 @@
     printf("\n");
 }
 
++ (void)load{
+    NSLog(@"74---------stack load");
+}
+
 @end

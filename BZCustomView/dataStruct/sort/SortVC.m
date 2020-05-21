@@ -7,10 +7,13 @@
 //
 
 #import "SortVC.h"
+#import "QueueArray.h"
+#import "SubStack.h"
 
 @interface SortVC ()
 
 @property(nonatomic,strong) NSMutableArray* array;
+@property(nonatomic,strong) QueueArray* queue;
 
 @end
 
@@ -42,8 +45,11 @@
         case 80:{
             //[self insertSort];
             //[self selectSort];
-            [self bubbleSort];
-            
+            //[self bubbleSort];
+           // [self heapSort];
+            //[self shellSort];
+            [self testQQ];
+            [SubStack load];
         }
             break;
         case 81:{
@@ -150,6 +156,113 @@
     }
     
    
+}
+
+
+//-----------------堆排序
+-(void) heapSort{
+    
+    printf("\n堆排序之前数组结果为：\n");
+     [self.array enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop){
+            printf(" %d",[obj intValue]);
+      }];
+   [self buildHeap:self.array.count];
+   for(NSInteger i = self.array.count - 1; i > 0;i --){
+       NSInteger tmp = [self.array[0] intValue];
+       self.array[0] = self.array[i];
+       self.array[i] = [NSNumber numberWithInteger:tmp];
+       [self adjustHeap:0 size:i];
+   }
+    
+    printf("\n堆排序之后数组结果为：\n");
+  [self.array enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop){
+         printf(" %d",[obj intValue]);
+   }];
+}
+
+-(void) buildHeap:(NSInteger) size{
+    for(NSInteger i = size / 2; i >= 0; i --){
+        [self adjustHeap:i size:size];
+    }
+}
+
+-(void) adjustHeap:(NSInteger) i size:(NSInteger)size{
+    NSInteger leftChild = 2 * i;
+    NSInteger rightChild = 2 * i + 1;
+    NSInteger tmp = 2 * i;
+    if(i < size / 2){
+        if(leftChild < size && self.array[leftChild] >= self.array[tmp]){
+            tmp = leftChild;
+        }
+        if(rightChild < size && self.array[rightChild] >= self.array[tmp]){
+            tmp = rightChild;
+        }
+        if(tmp != i){
+            NSInteger t = [self.array[tmp] intValue];
+            self.array[tmp] = self.array[i];
+            self.array[i] = [NSNumber numberWithInteger:t];
+            [self adjustHeap:tmp size:size];
+        }
+    }
+}
+//-----------f堆排序end-------------
+-(void) shellSort{
+    
+    printf("\n希尔排序之前数组结果为：\n");
+    [self.array enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop){
+           printf(" %d",[obj intValue]);
+     }];
+    NSInteger number = self.array.count / 2;
+    NSInteger i,j,tmp;
+    while (number >= 1) {
+        
+        for (i = number; i < self.array.count; i ++) {
+           tmp = [self.array[i] intValue];
+           j = i - number;
+           while (j >= 0 && [self.array[j] intValue] >= tmp) {
+               self.array[j + number] = self.array[j];
+               j = j - number;
+           }
+            self.array[j + number] = [NSNumber numberWithInteger:tmp];
+        }
+        
+        number = number / 2;
+    }
+    printf("\n希尔排序之后数组结果为：\n");
+       [self.array enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop){
+              printf(" %d",[obj intValue]);
+        }];
+}
+
+
+/**
+ 新学期开始了，小哈是小哼的新同桌(小哈是个小美女哦~)，小哼向小哈询问 QQ 号， 小哈当然不会直接告诉小哼啦，
+ 原因嘛你懂的。所以小哈给了小哼一串加密过的数字，同时 小哈也告诉了小哼解密规则。规则是这样的:首先将第 1 个数删除，
+ 紧接着将第 2 个数放到 这串数的末尾，再将第 3 个数删除并将第 4 个数放到这串数的末尾，再将第 5 个数删除...... 直到剩下最后一个数，将最后一个数也删除。按照刚才删除的顺序，把这些删除的数连在一 起就是小哈的 QQ 啦。
+ 现在你来帮帮小哼吧。小哈给小哼加密过的一串数是“6 3 1 7 5 8 9 2 4”。
+ */
+-(void) testQQ{
+    self.array = [NSMutableArray arrayWithObjects:@"5",@"4",@"6",@"2",@"A",@"B",@"C", nil];
+    if (!self.queue) {
+        self.queue = [[QueueArray alloc] initWithSize:self.array.count];
+    }
+     [self.array enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop){
+         [self.queue enqueue:obj];
+         NSLog(@"249------:%d",[obj intValue]);
+        }];
+    NSString* cur = nil;
+    NSString* next;
+    while ([self.queue length] > 1) {
+        cur = (NSString*)[self.queue dequeue] ;
+        next =  (NSString*)[self.queue dequeue];
+        NSLog(@"当前删除的元素为:%@",cur);
+        [self.queue enqueue:next];
+
+    }
+
+    NSLog(@"最后剩下的元素为：%@",[self.queue dequeue]);
+
+    
 }
 
 @end

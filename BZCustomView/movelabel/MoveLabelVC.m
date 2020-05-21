@@ -7,6 +7,8 @@
 //
 
 #import "MoveLabelVC.h"
+#import "UIView+Resize.h"
+#import "ScrollLabel.h"
 
 @interface MoveLabelVC ()
 @property(nonatomic,strong) UILabel* topLabel;
@@ -14,7 +16,11 @@
 @property(nonatomic,strong) UILabel* bottomLabel;
 
 @property(nonatomic,strong) UIView* textView;
+@property(nonatomic,strong) UIView* textView2;
 @property(nonatomic,strong) NSArray* texts;
+@property(nonatomic,assign) NSInteger index;
+
+@property(nonatomic,strong) ScrollLabel* scrollLabel;
 
 @end
 
@@ -22,14 +28,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.index = 0;
     [self initView];
 }
 
 -(void) initView{
 
     self.view.backgroundColor = [UIColor whiteColor];
-    self.texts = [NSArray arrayWithObjects:@"九阴真经",@"降龙十八掌",@"哈蟆功", nil];
+    self.texts = [NSArray arrayWithObjects:@"香辣肉丝",@"听你讲个故事",@"听你唱首歌",
+                  @"高考",@"大学",@"工作",@"生活",nil];
     
     
     UIButton* btnLabel = [[UIButton alloc] initWithFrame:CGRectMake(30, 40, 80, 30)];
@@ -48,27 +55,42 @@
     
     
     //跑马灯容器
-    self.textView = [[UIView alloc] initWithFrame:CGRectMake(30, 200, 240, 80)];
+    self.textView = [[UIView alloc] initWithFrame:CGRectMake(30, 100, 240, 40)];
     self.textView.backgroundColor = [UIColor grayColor];
+    self.textView.clipsToBounds = true;
     [self.view addSubview:self.textView];
+    
     
     self.topLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, -40, 180, 40)];
     self.topLabel.text = @"九阴真经";
     self.topLabel.hidden = true;
     self.topLabel.backgroundColor = [UIColor greenColor];
-    [self.textView addSubview:self.topLabel];
+    //[self.textView addSubview:self.topLabel];
     
-    self.label = [[UILabel alloc] initWithFrame:CGRectMake(0, 20, 180, 40)];
+    self.label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 180, 40)];
     self.label.text = @"这是一行垂直的文本";
     self.label.backgroundColor = [UIColor cyanColor];
     [self.textView addSubview:self.label];
     
     
-    self.bottomLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 80, 180, 40)];
+    self.bottomLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 40, 180, 40)];
     self.bottomLabel.text = @"哈蟆功";
-    self.bottomLabel.hidden = true;
     self.bottomLabel.backgroundColor = [UIColor brownColor];
     [self.textView addSubview:self.bottomLabel];
+    
+    //测试二
+    self.textView2 = [[UIView alloc] initWithFrame:CGRectMake(30, 160, 240, 40)];
+    self.textView2.backgroundColor = [UIColor grayColor];
+    self.textView2.clipsToBounds = true;
+    [self.view addSubview:self.textView2];
+    
+    self.scrollLabel = [[ScrollLabel alloc] init];
+    NSMutableArray* array = [NSMutableArray arrayWithArray:self.texts];
+    [self.scrollLabel setTargetView:self.textView2 withTitleArray:array];
+    [self.scrollLabel setOnClickListener:^(NSString* title){
+        NSLog(@"91--------:%@",title);
+    }];
+    
 }
 
 -(void) onClick:(UIButton*) button{
@@ -78,6 +100,7 @@
         case 12:{
         
             [self playAnim];
+            [self.scrollLabel start];
             
         }
             break;
@@ -85,8 +108,7 @@
         case 13:{
         
             [self dismissViewControllerAnimated:true completion:^{
-            
-             
+        
             }];
             
         }break;
@@ -109,77 +131,21 @@
 }
 
 -(void) timerAction{
-
-    int x = arc4random() % 3;
-    self.label.text = self.texts[x];
-    
-    
-    
-    for(UIView* tmpView in self.textView.subviews){
-        
-        if(tmpView.frame.origin.y == -40){
-            
-            tmpView.hidden = false;
-            [self playMoveAnimWith:tmpView toYpos:20 duration:0.7f animName:@"topAnim"];
-            
-        }else if (tmpView.frame.origin.y == 20){
-            
-            tmpView.hidden = true;
-            [self playMoveAnimWith:tmpView toYpos:80 duration:0.7f animName:@"middleAnim"];
-            
-        }else if (tmpView.frame.origin.y == 80){
-            
-            tmpView.hidden = true;
-            [self playMoveAnimWith:tmpView toYpos:-40 duration:0.7f animName:@"bottomAnim"];
-        }
-        
-    }
+    self.index ++;
+    //NSLog(@"114-------index:%ld   array size = 6 index:%ld",self.index,self.index % 6);
+    [UIView transitionWithView:self.label duration:2 * 0.5 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        self.label.tx_bottom = 0;
+        [UIView transitionWithView:self.label duration:2 * 0.5 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            self.bottomLabel.tx_y = 0;
+        } completion:^(BOOL finished) {
+            self.label.tx_y = self.textView.tx_height;
+            UILabel *tempLabel = self.label;
+            self.label = self.bottomLabel;
+            self.bottomLabel = tempLabel;
+        }];
+    } completion:nil];
     
 }
-
-
-
-
-
-
-/**
- 播放标签移动动画
-
- @param label 待移动的视图
- @param yPos 移动到的目标位置
- @param duration 持久度
- @param name 动画名
- */
--(void) playMoveAnimWith:(UIView*) label toYpos: (CGFloat)yPos duration:(NSTimeInterval)duration animName:(NSString*) name{
-
-    
-    CGRect frame = label.frame;
-
-    [UIView beginAnimations:name context:NULL];
-    [UIView setAnimationDuration:0.7f];
-    [UIView setAnimationDelegate:self];
-    [UIView setAnimationDidStopSelector:@selector(onEndAnim:)];
-    [UIView setAnimationCurve:UIViewAnimationCurveLinear];
-    //    [UIView setAnimationRepeatAutoreverses:NO];
-    //    [UIView setAnimationRepeatCount:MAXFLOAT];
-    
-    
-    frame.origin.y = yPos;
-    label.frame = frame;
-    
-    [UIView commitAnimations];
-    
-}
-
-
--(void)onEndAnim:(NSString*) animId{
-    
-    if ([animId  isEqual: @"topAnim"]){
-        
-    }
-}
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
