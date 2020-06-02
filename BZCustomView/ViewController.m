@@ -21,6 +21,7 @@
 #import "StickScrollVC.h"
 #import "RunloopVC.h"
 #import "DataStructVC.h"
+#import "KeyboardVC.h"
 
 #import "HWBaseViewController.h"
 #import "UIViewController+PanModalPresenter.h"
@@ -129,6 +130,13 @@
     [dataStruct addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:dataStruct];
     
+    UIButton* keyboard = [[UIButton alloc] initWithFrame:CGRectMake(30, 350, 180, 30)];
+       keyboard.backgroundColor = [UIColor grayColor];
+       keyboard.tag = 40;
+       [keyboard setTitle:@"键盘" forState:UIControlStateNormal];
+       [keyboard addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+       [self.view addSubview:keyboard];
+    
     
 }
 
@@ -192,6 +200,9 @@
             
         case 20:
              [self.navigationController pushViewController:[[DataStructVC alloc] init] animated:false];
+            break;
+        case 40:
+            [self.navigationController pushViewController:[[KeyboardVC alloc] init] animated:false];
             break;
             
             

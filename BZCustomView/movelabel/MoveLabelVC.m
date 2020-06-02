@@ -132,7 +132,6 @@
 
 -(void) timerAction{
     self.index ++;
-    //NSLog(@"114-------index:%ld   array size = 6 index:%ld",self.index,self.index % 6);
     [UIView transitionWithView:self.label duration:2 * 0.5 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         self.label.tx_bottom = 0;
         [UIView transitionWithView:self.label duration:2 * 0.5 options:UIViewAnimationOptionCurveEaseInOut animations:^{

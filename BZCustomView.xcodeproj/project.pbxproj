@@ -43,6 +43,11 @@
 		6B44327E2463AA5A0014E255 /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B44327D2463AA5A0014E255 /* LinkedList.m */; };
 		6B44328524657B7C0014E255 /* QueueArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B44328424657B7C0014E255 /* QueueArray.m */; };
 		6B44328824664C150014E255 /* QueueLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B44328724664C150014E255 /* QueueLinkedList.m */; };
+		6B5F0A01247B6AE70070EAD2 /* AbcKeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5F0A00247B6AE70070EAD2 /* AbcKeyBoardView.m */; };
+		6B5F0A04247B7A9C0070EAD2 /* KeyboardBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5F0A03247B7A9C0070EAD2 /* KeyboardBaseView.m */; };
+		6B5F0A0A247BB5D90070EAD2 /* KeyboardMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5F0A09247BB5D90070EAD2 /* KeyboardMgr.m */; };
+		6B5F0A0F247BC0420070EAD2 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5F0A0E247BC0420070EAD2 /* GTMBase64.m */; };
+		6B5F0A1B247BC3110070EAD2 /* NSString+Des3.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5F0A1A247BC3110070EAD2 /* NSString+Des3.m */; };
 		6B6B6908247666010039D88E /* UIView+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B6B6907247666010039D88E /* UIView+Resize.m */; };
 		6B6B690B24766A8F0039D88E /* ScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B6B690A24766A8F0039D88E /* ScrollLabel.m */; };
 		6B726B2924582BAD00F0840A /* StickScrollVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B726B2824582BAD00F0840A /* StickScrollVC.m */; };
@@ -52,6 +57,8 @@
 		6B726B36245835A000F0840A /* ScrollNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B726B35245835A000F0840A /* ScrollNavBar.m */; };
 		6B726B3924583A5D00F0840A /* UIView+LXB.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B726B3824583A5D00F0840A /* UIView+LXB.m */; };
 		6B73FDE82473F7F900145FA8 /* SubStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B73FDE72473F7F900145FA8 /* SubStack.m */; };
+		6BA0E5032477737100E13B97 /* KeyboardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA0E5022477737100E13B97 /* KeyboardVC.m */; };
+		6BA0E506247773AF00E13B97 /* KeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA0E505247773AF00E13B97 /* KeyboardView.m */; };
 		6BCF9A93244F194B0036E8B4 /* HWPanModalContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A64244F194B0036E8B4 /* HWPanModalContainerView.m */; };
 		6BCF9A94244F194B0036E8B4 /* HWPanModalPresentationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A66244F194B0036E8B4 /* HWPanModalPresentationDelegate.m */; };
 		6BCF9A95244F194B0036E8B4 /* HWDimmedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A67244F194B0036E8B4 /* HWDimmedView.m */; };
@@ -171,6 +178,17 @@
 		6B44328424657B7C0014E255 /* QueueArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QueueArray.m; sourceTree = "<group>"; };
 		6B44328624664C150014E255 /* QueueLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueueLinkedList.h; sourceTree = "<group>"; };
 		6B44328724664C150014E255 /* QueueLinkedList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QueueLinkedList.m; sourceTree = "<group>"; };
+		6B5F09FF247B6AE70070EAD2 /* AbcKeyBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbcKeyBoardView.h; sourceTree = "<group>"; };
+		6B5F0A00247B6AE70070EAD2 /* AbcKeyBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbcKeyBoardView.m; sourceTree = "<group>"; };
+		6B5F0A02247B7A9C0070EAD2 /* KeyboardBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardBaseView.h; sourceTree = "<group>"; };
+		6B5F0A03247B7A9C0070EAD2 /* KeyboardBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardBaseView.m; sourceTree = "<group>"; };
+		6B5F0A08247BB5D90070EAD2 /* KeyboardMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardMgr.h; sourceTree = "<group>"; };
+		6B5F0A09247BB5D90070EAD2 /* KeyboardMgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardMgr.m; sourceTree = "<group>"; };
+		6B5F0A0D247BC0420070EAD2 /* GTMBase64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		6B5F0A0E247BC0420070EAD2 /* GTMBase64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		6B5F0A10247BC0850070EAD2 /* GTMDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		6B5F0A19247BC3110070EAD2 /* NSString+Des3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Des3.h"; sourceTree = "<group>"; };
+		6B5F0A1A247BC3110070EAD2 /* NSString+Des3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Des3.m"; sourceTree = "<group>"; };
 		6B6B6906247666010039D88E /* UIView+Resize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Resize.h"; sourceTree = "<group>"; };
 		6B6B6907247666010039D88E /* UIView+Resize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Resize.m"; sourceTree = "<group>"; };
 		6B6B690924766A8F0039D88E /* ScrollLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollLabel.h; sourceTree = "<group>"; };
@@ -190,6 +208,10 @@
 		6B726B3824583A5D00F0840A /* UIView+LXB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LXB.m"; sourceTree = "<group>"; };
 		6B73FDE62473F7F900145FA8 /* SubStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubStack.h; sourceTree = "<group>"; };
 		6B73FDE72473F7F900145FA8 /* SubStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubStack.m; sourceTree = "<group>"; };
+		6BA0E5012477737100E13B97 /* KeyboardVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardVC.h; sourceTree = "<group>"; };
+		6BA0E5022477737100E13B97 /* KeyboardVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardVC.m; sourceTree = "<group>"; };
+		6BA0E504247773AF00E13B97 /* KeyboardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardView.h; sourceTree = "<group>"; };
+		6BA0E505247773AF00E13B97 /* KeyboardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardView.m; sourceTree = "<group>"; };
 		6BCF9A61244F194B0036E8B4 /* HWPanModalPresentationUpdateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPanModalPresentationUpdateProtocol.h; sourceTree = "<group>"; };
 		6BCF9A62244F194B0036E8B4 /* HWPanModalPresentable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPanModalPresentable.h; sourceTree = "<group>"; };
 		6BCF9A63244F194B0036E8B4 /* HWPanModalIndicatorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPanModalIndicatorProtocol.h; sourceTree = "<group>"; };
@@ -312,6 +334,8 @@
 		382EA7021F7367470052BE27 /* BZCustomView */ = {
 			isa = PBXGroup;
 			children = (
+				6B5F0A0C247BC0110070EAD2 /* threeDes */,
+				6BA0E5002477734D00E13B97 /* keyboard */,
 				6B4432782463A71A0014E255 /* dataStruct */,
 				6B4432742462E4650014E255 /* runloop */,
 				6B726B262458244100F0840A /* stickHead */,
@@ -527,6 +551,18 @@
 			path = dataStruct;
 			sourceTree = "<group>";
 		};
+		6B5F0A0C247BC0110070EAD2 /* threeDes */ = {
+			isa = PBXGroup;
+			children = (
+				6B5F0A0D247BC0420070EAD2 /* GTMBase64.h */,
+				6B5F0A0E247BC0420070EAD2 /* GTMBase64.m */,
+				6B5F0A10247BC0850070EAD2 /* GTMDefines.h */,
+				6B5F0A19247BC3110070EAD2 /* NSString+Des3.h */,
+				6B5F0A1A247BC3110070EAD2 /* NSString+Des3.m */,
+			);
+			name = threeDes;
+			sourceTree = "<group>";
+		};
 		6B6B6903247634CC0039D88E /* widgt */ = {
 			isa = PBXGroup;
 			children = (
@@ -553,6 +589,23 @@
 				6B726B3824583A5D00F0840A /* UIView+LXB.m */,
 			);
 			path = stickHead;
+			sourceTree = "<group>";
+		};
+		6BA0E5002477734D00E13B97 /* keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				6BA0E5012477737100E13B97 /* KeyboardVC.h */,
+				6BA0E5022477737100E13B97 /* KeyboardVC.m */,
+				6BA0E504247773AF00E13B97 /* KeyboardView.h */,
+				6BA0E505247773AF00E13B97 /* KeyboardView.m */,
+				6B5F09FF247B6AE70070EAD2 /* AbcKeyBoardView.h */,
+				6B5F0A00247B6AE70070EAD2 /* AbcKeyBoardView.m */,
+				6B5F0A02247B7A9C0070EAD2 /* KeyboardBaseView.h */,
+				6B5F0A03247B7A9C0070EAD2 /* KeyboardBaseView.m */,
+				6B5F0A08247BB5D90070EAD2 /* KeyboardMgr.h */,
+				6B5F0A09247BB5D90070EAD2 /* KeyboardMgr.m */,
+			);
+			name = keyboard;
 			sourceTree = "<group>";
 		};
 		6BCF9A5F244F194B0036E8B4 /* UIPresentationController */ = {
@@ -828,7 +881,9 @@
 				6B07D51D20C8C13800BBB85B /* HWVC.m in Sources */,
 				6B6B690B24766A8F0039D88E /* ScrollLabel.m in Sources */,
 				6B302E3C2467BCE7003884CF /* StackGame.m in Sources */,
+				6B5F0A01247B6AE70070EAD2 /* AbcKeyBoardView.m in Sources */,
 				6BCF9AA5244F194B0036E8B4 /* HWPanModalContentView.m in Sources */,
+				6BA0E506247773AF00E13B97 /* KeyboardView.m in Sources */,
 				6B302E3F2467BD9A003884CF /* Cell.m in Sources */,
 				6BE65B952468F87B005861C2 /* DelimiterMatch.m in Sources */,
 				6BCF9A9B244F194B0036E8B4 /* HWPanModalPresentableHandler.m in Sources */,
@@ -837,6 +892,7 @@
 				6B121FA12440A04700BD804F /* ArcVC.m in Sources */,
 				6BCF9A98244F194B0036E8B4 /* UIViewController+PanModalDefault.m in Sources */,
 				6BCF9AA1244F194B0036E8B4 /* HWPanModalPresentationAnimator.m in Sources */,
+				6B5F0A04247B7A9C0070EAD2 /* KeyboardBaseView.m in Sources */,
 				6B726B2C24582C2E00F0840A /* CollectionViewLayout.m in Sources */,
 				6B4432772462E4830014E255 /* RunloopVC.m in Sources */,
 				6BCF9A94244F194B0036E8B4 /* HWPanModalPresentationDelegate.m in Sources */,
@@ -860,10 +916,12 @@
 				6BE65B9924693209005861C2 /* AddLargeNumber.m in Sources */,
 				6BE65BAB246D2488005861C2 /* SortVC.m in Sources */,
 				6BCF9A9E244F194B0036E8B4 /* HWPanModalInteractiveAnimator.m in Sources */,
+				6B5F0A0F247BC0420070EAD2 /* GTMBase64.m in Sources */,
 				6BCF9A95244F194B0036E8B4 /* HWDimmedView.m in Sources */,
 				6B44327E2463AA5A0014E255 /* LinkedList.m in Sources */,
 				6BCF9A9A244F194B0036E8B4 /* HWVisualEffectView.m in Sources */,
 				382EA7391F7369C50052BE27 /* TestDrawRect.m in Sources */,
+				6B5F0A0A247BB5D90070EAD2 /* KeyboardMgr.m in Sources */,
 				389963451F8CC9E80044C2D4 /* PointMoveByCircleLayer.m in Sources */,
 				6BCF9A99244F194B0036E8B4 /* UIView+HW_Frame.m in Sources */,
 				382EA7081F7367470052BE27 /* AppDelegate.m in Sources */,
@@ -877,11 +935,13 @@
 				6B726B3924583A5D00F0840A /* UIView+LXB.m in Sources */,
 				382EA7051F7367470052BE27 /* main.m in Sources */,
 				6B726B2924582BAD00F0840A /* StickScrollVC.m in Sources */,
+				6BA0E5032477737100E13B97 /* KeyboardVC.m in Sources */,
 				6B037DD520D2072000D03148 /* DrawUtils.m in Sources */,
 				6BCF9AA7244F194B0036E8B4 /* KeyValueObserver.m in Sources */,
 				6BE65B9D2469508D005861C2 /* HexTranseMgr.m in Sources */,
 				6BE65BA4246A4D00005861C2 /* TreeNode.m in Sources */,
 				6B362582245574730099604F /* ArcIndicatorVC.m in Sources */,
+				6B5F0A1B247BC3110070EAD2 /* NSString+Des3.m in Sources */,
 				389963411F8CC8810044C2D4 /* PointMoveByCircleVC.m in Sources */,
 				6BCF9A9D244F194B0036E8B4 /* HWShoppingCartPresentingAnimation.m in Sources */,
 				6BCF9A9F244F194B0036E8B4 /* HWPageSheetPresentingAnimation.m in Sources */,
