@@ -41,6 +41,8 @@
     linked.backgroundColor = [UIColor grayColor];
     [self.view addSubview:linked];
     
+    [self setCornerRadiusWithRectCorner:UIRectCornerBottomLeft | UIRectCornerBottomRight  radius:5.0f targetView:linked];
+    
     UIButton* btnOppo = [[UIButton alloc] initWithFrame:CGRectMake(30, 100, 130, 30)];
     btnOppo.backgroundColor = [UIColor grayColor];
     btnOppo.tag = 10;
@@ -456,6 +458,22 @@
     }
     [self.hexTranseMgr decimal2AnyHex:31 withType:4];
     [self.hexTranseMgr anyHex2Decimal:@"133" withType:4];
+}
+
+
+/// 使用贝塞尔设置圆角，防止离屏渲染上下文切换带的掉帧问题
+/// @param rectCorner 圆角方式
+/// @param radius 圆角n尺寸
+/// @param view 目标视图
+-(void)setCornerRadiusWithRectCorner:(UIRectCorner)rectCorner radius:(CGFloat)radius targetView:(UIView*)view{
+    CAShapeLayer *maskLayer = nil;
+    if (!view.layer.mask) {
+        UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:view.bounds byRoundingCorners:rectCorner cornerRadii:CGSizeMake(radius, radius)];
+        maskLayer = [CAShapeLayer layer];
+        maskLayer.frame = view.bounds;
+        maskLayer.path = maskPath.CGPath;
+        view.layer.mask = maskLayer;
+    }
 }
 
 

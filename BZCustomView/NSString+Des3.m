@@ -124,18 +124,32 @@
 
 + (NSString *)encodeToPercentEscapeString: (NSString *) input
 {
-    NSString *outputStr = (__bridge NSString *)CFURLCreateStringByAddingPercentEscapes(
-                                                                             
-                                                                             NULL, /* allocator */
-                                                                             
-                                                                             (__bridge CFStringRef)input,
-                                                                             
-                                                                             NULL, /* charactersToLeaveUnescaped */
-                                                                             
-                                                                             (CFStringRef)@"!*'();:@&=+$,/?%#[]",
-                                                                             
-                                                                             kCFStringEncodingUTF8);
+    CFStringRef cfString = CFURLCreateStringByAddingPercentEscapes(
     
+    NULL, /* allocator */
+    
+    (__bridge CFStringRef)input,
+    
+    NULL, /* charactersToLeaveUnescaped */
+    
+    (CFStringRef)@"!*'();:@&=+$,/?%#[]",
+    
+    kCFStringEncodingUTF8);
+//    NSString *outputStr = (__bridge NSString *)CFURLCreateStringByAddingPercentEscapes(
+//
+//                                                                             NULL, /* allocator */
+//
+//                                                                             (__bridge CFStringRef)input,
+//
+//                                                                             NULL, /* charactersToLeaveUnescaped */
+//
+//                                                                             (CFStringRef)@"!*'();:@&=+$,/?%#[]",
+//
+//                                                                             kCFStringEncodingUTF8);
+    
+    NSString* outputStr = [NSString stringWithString:(__bridge NSString *)cfString];
+    
+    CFRelease(cfString); //手动释放防止泄露
     
     return  outputStr;
 }

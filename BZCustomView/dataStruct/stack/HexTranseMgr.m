@@ -45,7 +45,7 @@
         result += [ch intValue] * pow(type, [anyNumberString length] - i - 1);
     }
     NSLog(@"47-------%@ 的 %ld 进制转换为十进制为:%ld",anyNumberString,type,result);
-    return nil;
+    return [NSString stringWithFormat:@"%ld",result];
 }
 
 @end

@@ -22,6 +22,8 @@
 #import "RunloopVC.h"
 #import "DataStructVC.h"
 #import "KeyboardVC.h"
+#import "CopyVC.h"
+#import "GuideVC.h"
 
 #import "HWBaseViewController.h"
 #import "UIViewController+PanModalPresenter.h"
@@ -137,6 +139,19 @@
        [keyboard addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
        [self.view addSubview:keyboard];
     
+    UIButton* copy = [[UIButton alloc] initWithFrame:CGRectMake(30, 390, 180, 30)];
+  copy.backgroundColor = [UIColor grayColor];
+  copy.tag = 41;
+  [copy setTitle:@"拷贝" forState:UIControlStateNormal];
+  [copy addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+  [self.view addSubview:copy];
+    
+    UIButton* guid = [[UIButton alloc] initWithFrame:CGRectMake(230, 390, 180, 30)];
+    guid.backgroundColor = [UIColor grayColor];
+    guid.tag = 42;
+    [guid setTitle:@"新手引导" forState:UIControlStateNormal];
+    [guid addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:guid];
     
 }
 
@@ -205,6 +220,14 @@
             [self.navigationController pushViewController:[[KeyboardVC alloc] init] animated:false];
             break;
             
+        case 41:
+            [self.navigationController pushViewController:[[CopyVC alloc] init] animated:false];
+            break;
+            
+        case 42:
+            [self.navigationController pushViewController:[[GuideVC alloc] init] animated:false];
+            break;
+            
             
         default:
             break;
@@ -268,6 +291,7 @@
     
     
     keyFramedAnimation.path = path;
+    CGPathRelease(path); //释放防止内存泄露
     keyFramedAnimation.duration = 1.4;
     
     keyFramedAnimation.delegate = self;
@@ -449,6 +473,7 @@
     
     
     keyFramedAnimation.path = path;
+    CGPathRelease(path); //释放防止内存泄露
     keyFramedAnimation.duration = 1.2;
     
     

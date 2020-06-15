@@ -87,6 +87,8 @@
 		6BE65BA4246A4D00005861C2 /* TreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE65BA3246A4D00005861C2 /* TreeNode.m */; };
 		6BE65BA7246A5118005861C2 /* BinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE65BA6246A5118005861C2 /* BinaryTree.m */; };
 		6BE65BAB246D2488005861C2 /* SortVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE65BAA246D2488005861C2 /* SortVC.m */; };
+		6BFDFDF72486259700AFAE93 /* CopyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFDFDF62486259700AFAE93 /* CopyVC.m */; };
+		6BFE85032487BA0F00C557E6 /* GuideVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE85022487BA0F00C557E6 /* GuideVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -274,6 +276,10 @@
 		6BE65BA6246A5118005861C2 /* BinaryTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BinaryTree.m; sourceTree = "<group>"; };
 		6BE65BA9246D2488005861C2 /* SortVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortVC.h; sourceTree = "<group>"; };
 		6BE65BAA246D2488005861C2 /* SortVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortVC.m; sourceTree = "<group>"; };
+		6BFDFDF52486259700AFAE93 /* CopyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyVC.h; sourceTree = "<group>"; };
+		6BFDFDF62486259700AFAE93 /* CopyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyVC.m; sourceTree = "<group>"; };
+		6BFE85012487BA0F00C557E6 /* GuideVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuideVC.h; sourceTree = "<group>"; };
+		6BFE85022487BA0F00C557E6 /* GuideVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GuideVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -334,6 +340,8 @@
 		382EA7021F7367470052BE27 /* BZCustomView */ = {
 			isa = PBXGroup;
 			children = (
+				6BFE85002487B9BA00C557E6 /* guide */,
+				6BFDFDF42486257400AFAE93 /* copy */,
 				6B5F0A0C247BC0110070EAD2 /* threeDes */,
 				6BA0E5002477734D00E13B97 /* keyboard */,
 				6B4432782463A71A0014E255 /* dataStruct */,
@@ -738,6 +746,24 @@
 			path = sort;
 			sourceTree = "<group>";
 		};
+		6BFDFDF42486257400AFAE93 /* copy */ = {
+			isa = PBXGroup;
+			children = (
+				6BFDFDF52486259700AFAE93 /* CopyVC.h */,
+				6BFDFDF62486259700AFAE93 /* CopyVC.m */,
+			);
+			path = copy;
+			sourceTree = "<group>";
+		};
+		6BFE85002487B9BA00C557E6 /* guide */ = {
+			isa = PBXGroup;
+			children = (
+				6BFE85012487BA0F00C557E6 /* GuideVC.h */,
+				6BFE85022487BA0F00C557E6 /* GuideVC.m */,
+			);
+			path = guide;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -891,6 +917,7 @@
 				6BCF9A9C244F194B0036E8B4 /* HWBaseViewController.m in Sources */,
 				6B121FA12440A04700BD804F /* ArcVC.m in Sources */,
 				6BCF9A98244F194B0036E8B4 /* UIViewController+PanModalDefault.m in Sources */,
+				6BFDFDF72486259700AFAE93 /* CopyVC.m in Sources */,
 				6BCF9AA1244F194B0036E8B4 /* HWPanModalPresentationAnimator.m in Sources */,
 				6B5F0A04247B7A9C0070EAD2 /* KeyboardBaseView.m in Sources */,
 				6B726B2C24582C2E00F0840A /* CollectionViewLayout.m in Sources */,
@@ -899,6 +926,7 @@
 				6BE65BA7246A5118005861C2 /* BinaryTree.m in Sources */,
 				382EA70B1F7367470052BE27 /* ViewController.m in Sources */,
 				382EA7401F73AA390052BE27 /* LayerLoadingAnim.m in Sources */,
+				6BFE85032487BA0F00C557E6 /* GuideVC.m in Sources */,
 				6BCF9AA4244F194B0036E8B4 /* HWPanIndicatorView.m in Sources */,
 				38149A6A1F749EF5004A8938 /* OppoVC.m in Sources */,
 				6BCF9AA2244F194B0036E8B4 /* UIViewController+PanModalPresenter.m in Sources */,

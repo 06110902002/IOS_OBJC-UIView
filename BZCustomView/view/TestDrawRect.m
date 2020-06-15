@@ -166,7 +166,7 @@
     };
     CGGradientRef gradient = CGGradientCreateWithColorComponents
     (rgb, colors, NULL, sizeof(colors)/(sizeof(colors[0])*4));//形成梯形，渐变的效果
-    CGColorSpaceRelease(rgb);
+    CGColorSpaceRelease(rgb); //释放防止内存泄露
     //画线形成一个矩形
     //CGContextSaveGState与CGContextRestoreGState的作用
     /*
@@ -200,6 +200,8 @@
     
     //下面再看一个颜色渐变的圆
     CGContextDrawRadialGradient(context, gradient, CGPointMake(300, 100), 0.0, CGPointMake(300, 100), 10, kCGGradientDrawsBeforeStartLocation);
+    
+    CGGradientRelease(gradient);//释放防止内存泄露
     
     /*画扇形和椭圆*/
     //画扇形，也就画圆，只不过是设置角度的大小，形成一个扇形
