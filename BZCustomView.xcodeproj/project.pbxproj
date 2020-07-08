@@ -38,6 +38,8 @@
 		6B36257E2455730D0099604F /* RectangleIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B36257B2455730D0099604F /* RectangleIndicatorView.m */; };
 		6B362582245574730099604F /* ArcIndicatorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B362581245574730099604F /* ArcIndicatorVC.m */; };
 		6B3E5BD520C7DB15002CB0D9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B3E5BD420C7DB15002CB0D9 /* Default-568h@2x.png */; };
+		6B440B7E24B06626009FD3DD /* RuntimeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B440B7D24B06626009FD3DD /* RuntimeVC.m */; };
+		6B440B8124B0679C009FD3DD /* NSArray+CrashHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B440B8024B0679C009FD3DD /* NSArray+CrashHandle.m */; };
 		6B4432772462E4830014E255 /* RunloopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B4432762462E4830014E255 /* RunloopVC.m */; };
 		6B44327B2463A7360014E255 /* DataStructVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B44327A2463A7360014E255 /* DataStructVC.m */; };
 		6B44327E2463AA5A0014E255 /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B44327D2463AA5A0014E255 /* LinkedList.m */; };
@@ -87,6 +89,9 @@
 		6BE65BA4246A4D00005861C2 /* TreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE65BA3246A4D00005861C2 /* TreeNode.m */; };
 		6BE65BA7246A5118005861C2 /* BinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE65BA6246A5118005861C2 /* BinaryTree.m */; };
 		6BE65BAB246D2488005861C2 /* SortVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE65BAA246D2488005861C2 /* SortVC.m */; };
+		6BF56D1524B460160030AB7A /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF56D1424B460160030AB7A /* Father.m */; };
+		6BF56D1824B460490030AB7A /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF56D1724B460490030AB7A /* Son.m */; };
+		6BF56D1B24B460A70030AB7A /* Son+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF56D1A24B460A70030AB7A /* Son+Swizzle.m */; };
 		6BFDFDF72486259700AFAE93 /* CopyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFDFDF62486259700AFAE93 /* CopyVC.m */; };
 		6BFE85032487BA0F00C557E6 /* GuideVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFE85022487BA0F00C557E6 /* GuideVC.m */; };
 /* End PBXBuildFile section */
@@ -170,6 +175,10 @@
 		6B362580245574730099604F /* ArcIndicatorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArcIndicatorVC.h; sourceTree = "<group>"; };
 		6B362581245574730099604F /* ArcIndicatorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArcIndicatorVC.m; sourceTree = "<group>"; };
 		6B3E5BD420C7DB15002CB0D9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6B440B7C24B06626009FD3DD /* RuntimeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeVC.h; sourceTree = "<group>"; };
+		6B440B7D24B06626009FD3DD /* RuntimeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeVC.m; sourceTree = "<group>"; };
+		6B440B7F24B0679C009FD3DD /* NSArray+CrashHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+CrashHandle.h"; sourceTree = "<group>"; };
+		6B440B8024B0679C009FD3DD /* NSArray+CrashHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CrashHandle.m"; sourceTree = "<group>"; };
 		6B4432752462E4830014E255 /* RunloopVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunloopVC.h; sourceTree = "<group>"; };
 		6B4432762462E4830014E255 /* RunloopVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunloopVC.m; sourceTree = "<group>"; };
 		6B4432792463A7360014E255 /* DataStructVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataStructVC.h; sourceTree = "<group>"; };
@@ -276,6 +285,12 @@
 		6BE65BA6246A5118005861C2 /* BinaryTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BinaryTree.m; sourceTree = "<group>"; };
 		6BE65BA9246D2488005861C2 /* SortVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortVC.h; sourceTree = "<group>"; };
 		6BE65BAA246D2488005861C2 /* SortVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortVC.m; sourceTree = "<group>"; };
+		6BF56D1324B460160030AB7A /* Father.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Father.h; sourceTree = "<group>"; };
+		6BF56D1424B460160030AB7A /* Father.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Father.m; sourceTree = "<group>"; };
+		6BF56D1624B460490030AB7A /* Son.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Son.h; sourceTree = "<group>"; };
+		6BF56D1724B460490030AB7A /* Son.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
+		6BF56D1924B460A70030AB7A /* Son+Swizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Son+Swizzle.h"; sourceTree = "<group>"; };
+		6BF56D1A24B460A70030AB7A /* Son+Swizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Son+Swizzle.m"; sourceTree = "<group>"; };
 		6BFDFDF52486259700AFAE93 /* CopyVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CopyVC.h; sourceTree = "<group>"; };
 		6BFDFDF62486259700AFAE93 /* CopyVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CopyVC.m; sourceTree = "<group>"; };
 		6BFE85012487BA0F00C557E6 /* GuideVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuideVC.h; sourceTree = "<group>"; };
@@ -340,6 +355,7 @@
 		382EA7021F7367470052BE27 /* BZCustomView */ = {
 			isa = PBXGroup;
 			children = (
+				6B440B7B24B065FA009FD3DD /* runtime */,
 				6BFE85002487B9BA00C557E6 /* guide */,
 				6BFDFDF42486257400AFAE93 /* copy */,
 				6B5F0A0C247BC0110070EAD2 /* threeDes */,
@@ -533,6 +549,18 @@
 			children = (
 			);
 			name = img;
+			sourceTree = "<group>";
+		};
+		6B440B7B24B065FA009FD3DD /* runtime */ = {
+			isa = PBXGroup;
+			children = (
+				6BF56D1224B45FF10030AB7A /* switchMethod */,
+				6B440B7C24B06626009FD3DD /* RuntimeVC.h */,
+				6B440B7D24B06626009FD3DD /* RuntimeVC.m */,
+				6B440B7F24B0679C009FD3DD /* NSArray+CrashHandle.h */,
+				6B440B8024B0679C009FD3DD /* NSArray+CrashHandle.m */,
+			);
+			path = runtime;
 			sourceTree = "<group>";
 		};
 		6B4432742462E4650014E255 /* runloop */ = {
@@ -746,6 +774,19 @@
 			path = sort;
 			sourceTree = "<group>";
 		};
+		6BF56D1224B45FF10030AB7A /* switchMethod */ = {
+			isa = PBXGroup;
+			children = (
+				6BF56D1324B460160030AB7A /* Father.h */,
+				6BF56D1424B460160030AB7A /* Father.m */,
+				6BF56D1624B460490030AB7A /* Son.h */,
+				6BF56D1724B460490030AB7A /* Son.m */,
+				6BF56D1924B460A70030AB7A /* Son+Swizzle.h */,
+				6BF56D1A24B460A70030AB7A /* Son+Swizzle.m */,
+			);
+			path = switchMethod;
+			sourceTree = "<group>";
+		};
 		6BFDFDF42486257400AFAE93 /* copy */ = {
 			isa = PBXGroup;
 			children = (
@@ -908,6 +949,7 @@
 				6B6B690B24766A8F0039D88E /* ScrollLabel.m in Sources */,
 				6B302E3C2467BCE7003884CF /* StackGame.m in Sources */,
 				6B5F0A01247B6AE70070EAD2 /* AbcKeyBoardView.m in Sources */,
+				6BF56D1B24B460A70030AB7A /* Son+Swizzle.m in Sources */,
 				6BCF9AA5244F194B0036E8B4 /* HWPanModalContentView.m in Sources */,
 				6BA0E506247773AF00E13B97 /* KeyboardView.m in Sources */,
 				6B302E3F2467BD9A003884CF /* Cell.m in Sources */,
@@ -915,6 +957,7 @@
 				6BCF9A9B244F194B0036E8B4 /* HWPanModalPresentableHandler.m in Sources */,
 				38250EE71F74DC3C008B86A2 /* ShapeLayer_BezierParh.m in Sources */,
 				6BCF9A9C244F194B0036E8B4 /* HWBaseViewController.m in Sources */,
+				6BF56D1824B460490030AB7A /* Son.m in Sources */,
 				6B121FA12440A04700BD804F /* ArcVC.m in Sources */,
 				6BCF9A98244F194B0036E8B4 /* UIViewController+PanModalDefault.m in Sources */,
 				6BFDFDF72486259700AFAE93 /* CopyVC.m in Sources */,
@@ -959,10 +1002,13 @@
 				38149A671F749D3C004A8938 /* CircleLayer.m in Sources */,
 				382EA73C1F7394430052BE27 /* LayerDraw.m in Sources */,
 				6B726B2F24582D1E00F0840A /* ItemView.m in Sources */,
+				6BF56D1524B460160030AB7A /* Father.m in Sources */,
 				6B36257E2455730D0099604F /* RectangleIndicatorView.m in Sources */,
 				6B726B3924583A5D00F0840A /* UIView+LXB.m in Sources */,
+				6B440B8124B0679C009FD3DD /* NSArray+CrashHandle.m in Sources */,
 				382EA7051F7367470052BE27 /* main.m in Sources */,
 				6B726B2924582BAD00F0840A /* StickScrollVC.m in Sources */,
+				6B440B7E24B06626009FD3DD /* RuntimeVC.m in Sources */,
 				6BA0E5032477737100E13B97 /* KeyboardVC.m in Sources */,
 				6B037DD520D2072000D03148 /* DrawUtils.m in Sources */,
 				6BCF9AA7244F194B0036E8B4 /* KeyValueObserver.m in Sources */,

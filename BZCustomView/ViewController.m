@@ -24,6 +24,7 @@
 #import "KeyboardVC.h"
 #import "CopyVC.h"
 #import "GuideVC.h"
+#import "runtime/RuntimeVC.h"
 
 #import "HWBaseViewController.h"
 #import "UIViewController+PanModalPresenter.h"
@@ -153,6 +154,13 @@
     [guid addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:guid];
     
+    UIButton* runtime = [[UIButton alloc] initWithFrame:CGRectMake(30, 430, 180, 30)];
+    runtime.backgroundColor = [UIColor grayColor];
+    runtime.tag = 43;
+    [runtime setTitle:@"runtime" forState:UIControlStateNormal];
+    [runtime addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:runtime];
+    
 }
 
 -(void) onClick:(UIButton*) button{
@@ -226,6 +234,10 @@
             
         case 42:
             [self.navigationController pushViewController:[[GuideVC alloc] init] animated:false];
+            break;
+            
+        case 43:
+           [self.navigationController pushViewController:[[RuntimeVC alloc] init] animated:false];
             break;
             
             
