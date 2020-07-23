@@ -123,6 +123,13 @@ typedef NS_OPTIONS(NSUInteger, OPT_TYPE) {
        [deleteNode addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
        [self.view addSubview:deleteNode];
     
+    UIButton* pubPrant = [[UIButton alloc] initWithFrame:CGRectMake(170, 290, 150, 30)];
+    pubPrant.backgroundColor = [UIColor grayColor];
+    pubPrant.tag = 82;
+    [pubPrant setTitle:@"最近公共父结点" forState:UIControlStateNormal];
+    [pubPrant addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:pubPrant];
+    
     
 }
 -(void) onClick:(UIButton*) button{
@@ -172,6 +179,11 @@ typedef NS_OPTIONS(NSUInteger, OPT_TYPE) {
         case 81:
            [self printTree:DELETE];
         break;
+            
+        case 82:
+            [self printTree:TIGUI_PRE];
+            [self lastPubPrent];
+            break;
                        
         default:
             break;
@@ -254,6 +266,18 @@ typedef NS_OPTIONS(NSUInteger, OPT_TYPE) {
             break;
     }
     
+}
+
+-(void) lastPubPrent{
+    if(!self.tree){
+           self.tree = [[BinaryTree alloc] init];
+       }
+    
+    TreeNode* p = [[TreeNode alloc] initWithData:2];
+    TreeNode* q = [[TreeNode alloc] initWithData:9];
+    TreeNode* pubNode = [self.tree lastPublicParentNode:self.tree.root node1:p node2:q];
+    
+    NSLog(@"\n280---------最近公共父结点:%ld",pubNode.value);
 }
 
 

@@ -25,6 +25,8 @@
 #import "CopyVC.h"
 #import "GuideVC.h"
 #import "runtime/RuntimeVC.h"
+#import "KVCKVOVC.h"
+#import "NSNotificatioVC.h"
 
 #import "HWBaseViewController.h"
 #import "UIViewController+PanModalPresenter.h"
@@ -38,11 +40,23 @@
 
 @implementation ViewController
 
+-(instancetype) init{
+    if (self = [super init]) {
+        self.view.backgroundColor = [UIColor greenColor];
+    }
+    NSLog(@"45--------init");
+    return self;
+}
+-(void) loadView{
+    [super loadView];
+    NSLog(@"48--------load view");
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
    //[self testDrawRectInView];
-    
+    //[self testBadlock];
    
     
     //[self testLayerDelegateDraw];
@@ -161,6 +175,20 @@
     [runtime addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:runtime];
     
+    UIButton* kvc_kvo = [[UIButton alloc] initWithFrame:CGRectMake(230, 430, 180, 30)];
+    kvc_kvo.backgroundColor = [UIColor grayColor];
+    kvc_kvo.tag = 53;
+    [kvc_kvo setTitle:@"kvc/kvo" forState:UIControlStateNormal];
+    [kvc_kvo addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:kvc_kvo];
+    
+    UIButton* NSNotificatio = [[UIButton alloc] initWithFrame:CGRectMake(30, 470, 180, 30)];
+    NSNotificatio.backgroundColor = [UIColor grayColor];
+    NSNotificatio.tag = 55;
+    [NSNotificatio setTitle:@"NSNotificatio" forState:UIControlStateNormal];
+    [NSNotificatio addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:NSNotificatio];
+    
 }
 
 -(void) onClick:(UIButton*) button{
@@ -238,6 +266,16 @@
             
         case 43:
            [self.navigationController pushViewController:[[RuntimeVC alloc] init] animated:false];
+            break;
+            
+        case 53:
+           [self.navigationController pushViewController:[[KVCKVOVC alloc] init] animated:false];
+
+            break;
+            
+        case 55:
+            [self.navigationController pushViewController:[[NSNotificatioVC alloc] init] animated:false];
+
             break;
             
             
@@ -519,6 +557,15 @@
  */
 static inline CGFloat screenWidth(){
     return [UIScreen mainScreen].bounds.size.width;
+}
+
+
+/// 测试死锁
+-(void) testBadlock{
+    dispatch_sync(dispatch_get_main_queue(), ^{
+       
+        NSLog(@"deallock");
+    });
 }
 
 @end

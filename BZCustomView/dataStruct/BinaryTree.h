@@ -99,8 +99,23 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param node 待删除的结点
 -(TreeNode*) getDirctInPostNode:(TreeNode*) node;
 
+@property(nonatomic,assign) NSInteger index;
+@property(nonatomic,strong)TreeNode* node;
+
+/// 查找二叉排序树第k大的结点
+/// @param node 树根结点
+/// @param kvalue 第k大
+-(TreeNode*) searchKthNode:(TreeNode*)node k:(NSInteger)kvalue;
+
 
 -(void) create:(NSArray*) array;
+
+
+/// 求两个结点的最近公共w父结点
+/// @param root 根结点
+/// @param p 其中一个结点
+/// @param q 另一个结点
+-(TreeNode*) lastPublicParentNode:(TreeNode*) root node1:(TreeNode*)p node2:(TreeNode*)q;
 
 
 

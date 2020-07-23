@@ -387,6 +387,39 @@
     
 }
 
+-(TreeNode*) searchKthNode:(TreeNode*)node k:(NSInteger)kvalue{
+    if (kvalue == 0 || node == nil) {
+        return nil;
+    }
+    [self searchKthNode:node.leftChild k:kvalue];
+    self.index ++;
+    if(self.index == kvalue){
+        self.node = node;
+        return self.node;
+    }
+    [self searchKthNode:node.rightChild k:kvalue];
+    return self.node;
+    
+}
+/// 求两个结点的最近公共w父结点
+/// @param root 根结点
+/// @param p 其中一个结点
+/// @param q 另一个结点
+-(TreeNode*) lastPublicParentNode:(TreeNode*) root node1:(TreeNode*)p node2:(TreeNode*)q{
+    
+    if(root == nil || root == p || root == q){
+        return root;
+    }
+     
+    TreeNode* left = [self lastPublicParentNode:root.leftChild node1:p node2:q];
+    TreeNode* right = [self lastPublicParentNode:root.leftChild node1:p node2:q];
+    if(left != nil && right != nil){
+        return root;
+    }
+    return left != nil && right != nil ? root : left == nil ? right : left;
+
+}
+
 
 
 

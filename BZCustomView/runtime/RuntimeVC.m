@@ -88,21 +88,21 @@
 
 
 void myMethod(id self, SEL _cmd,NSString *nub) {
-NSLog(@"ifelseboyxx%@",nub);
+    NSLog(@"ifelseboyxx%@",nub);
 }
 
 //第一次v进行
-+ (BOOL)resolveInstanceMethod:(SEL)sel {
-    #pragma clang diagnostic push
-    #pragma clang diagnostic ignored "-Wundeclared-selector"
-    if (sel == @selector(myTestPrint:)) {
-    #pragma clang diagnostic pop
-    class_addMethod([self class],sel,(IMP)myMethod,"v@:@");
-        return YES;
-    }else {
-        return [super resolveInstanceMethod:sel];
-    }
-}
+//+ (BOOL)resolveInstanceMethod:(SEL)sel {
+//    #pragma clang diagnostic push
+//    #pragma clang diagnostic ignored "-Wundeclared-selector"
+//    if (sel == @selector(myTestPrint:)) {
+//    #pragma clang diagnostic pop
+//    class_addMethod([self class],sel,(IMP)myMethod,"v@:@");
+//        return YES;
+//    }else {
+//        return [super resolveInstanceMethod:sel];
+//    }
+//}
 // 第二次
 //- (id)forwardingTargetForSelector:(SEL)aSelector {
 //    #pragma clang diagnostic push

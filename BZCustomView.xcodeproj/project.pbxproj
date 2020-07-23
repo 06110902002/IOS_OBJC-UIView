@@ -24,6 +24,7 @@
 		387F80931F8DA47200C0DB10 /* MoveLabelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 387F80921F8DA47200C0DB10 /* MoveLabelVC.m */; };
 		389963411F8CC8810044C2D4 /* PointMoveByCircleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 389963401F8CC8810044C2D4 /* PointMoveByCircleVC.m */; };
 		389963451F8CC9E80044C2D4 /* PointMoveByCircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 389963441F8CC9E80044C2D4 /* PointMoveByCircleLayer.m */; };
+		6B0365B924C82F6A001CBCEE /* NSNotificatioVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0365B824C82F6A001CBCEE /* NSNotificatioVC.m */; };
 		6B037DD520D2072000D03148 /* DrawUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B037DD420D2072000D03148 /* DrawUtils.m */; };
 		6B07D51D20C8C13800BBB85B /* HWVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B07D51C20C8C13800BBB85B /* HWVC.m */; };
 		6B07D52020C8C15B00BBB85B /* HWCircleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B07D51F20C8C15B00BBB85B /* HWCircleProgressView.m */; };
@@ -61,6 +62,8 @@
 		6B73FDE82473F7F900145FA8 /* SubStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B73FDE72473F7F900145FA8 /* SubStack.m */; };
 		6BA0E5032477737100E13B97 /* KeyboardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA0E5022477737100E13B97 /* KeyboardVC.m */; };
 		6BA0E506247773AF00E13B97 /* KeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA0E505247773AF00E13B97 /* KeyboardView.m */; };
+		6BAAB41024BB478200F7B67C /* KVCKVOVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAB40F24BB478200F7B67C /* KVCKVOVC.m */; };
+		6BAAB41424BB499C00F7B67C /* Man.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BAAB41324BB499C00F7B67C /* Man.m */; };
 		6BCF9A93244F194B0036E8B4 /* HWPanModalContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A64244F194B0036E8B4 /* HWPanModalContainerView.m */; };
 		6BCF9A94244F194B0036E8B4 /* HWPanModalPresentationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A66244F194B0036E8B4 /* HWPanModalPresentationDelegate.m */; };
 		6BCF9A95244F194B0036E8B4 /* HWDimmedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCF9A67244F194B0036E8B4 /* HWDimmedView.m */; };
@@ -148,6 +151,8 @@
 		389963401F8CC8810044C2D4 /* PointMoveByCircleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointMoveByCircleVC.m; sourceTree = "<group>"; };
 		389963431F8CC9E80044C2D4 /* PointMoveByCircleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PointMoveByCircleLayer.h; path = pointCircle/PointMoveByCircleLayer.h; sourceTree = "<group>"; };
 		389963441F8CC9E80044C2D4 /* PointMoveByCircleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PointMoveByCircleLayer.m; path = pointCircle/PointMoveByCircleLayer.m; sourceTree = "<group>"; };
+		6B0365B724C82F6A001CBCEE /* NSNotificatioVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSNotificatioVC.h; sourceTree = "<group>"; };
+		6B0365B824C82F6A001CBCEE /* NSNotificatioVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSNotificatioVC.m; sourceTree = "<group>"; };
 		6B037DD320D2072000D03148 /* DrawUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawUtils.h; sourceTree = "<group>"; };
 		6B037DD420D2072000D03148 /* DrawUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawUtils.m; sourceTree = "<group>"; };
 		6B07D51B20C8C13800BBB85B /* HWVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWVC.h; sourceTree = "<group>"; };
@@ -223,6 +228,10 @@
 		6BA0E5022477737100E13B97 /* KeyboardVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardVC.m; sourceTree = "<group>"; };
 		6BA0E504247773AF00E13B97 /* KeyboardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardView.h; sourceTree = "<group>"; };
 		6BA0E505247773AF00E13B97 /* KeyboardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardView.m; sourceTree = "<group>"; };
+		6BAAB40E24BB478200F7B67C /* KVCKVOVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCKVOVC.h; sourceTree = "<group>"; };
+		6BAAB40F24BB478200F7B67C /* KVCKVOVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCKVOVC.m; sourceTree = "<group>"; };
+		6BAAB41224BB499C00F7B67C /* Man.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Man.h; sourceTree = "<group>"; };
+		6BAAB41324BB499C00F7B67C /* Man.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Man.m; sourceTree = "<group>"; };
 		6BCF9A61244F194B0036E8B4 /* HWPanModalPresentationUpdateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPanModalPresentationUpdateProtocol.h; sourceTree = "<group>"; };
 		6BCF9A62244F194B0036E8B4 /* HWPanModalPresentable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPanModalPresentable.h; sourceTree = "<group>"; };
 		6BCF9A63244F194B0036E8B4 /* HWPanModalIndicatorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWPanModalIndicatorProtocol.h; sourceTree = "<group>"; };
@@ -355,6 +364,7 @@
 		382EA7021F7367470052BE27 /* BZCustomView */ = {
 			isa = PBXGroup;
 			children = (
+				6B0365B624C82F4D001CBCEE /* NSNotification */,
 				6B440B7B24B065FA009FD3DD /* runtime */,
 				6BFE85002487B9BA00C557E6 /* guide */,
 				6BFDFDF42486257400AFAE93 /* copy */,
@@ -461,6 +471,15 @@
 			name = pointCircle;
 			sourceTree = "<group>";
 		};
+		6B0365B624C82F4D001CBCEE /* NSNotification */ = {
+			isa = PBXGroup;
+			children = (
+				6B0365B724C82F6A001CBCEE /* NSNotificatioVC.h */,
+				6B0365B824C82F6A001CBCEE /* NSNotificatioVC.m */,
+			);
+			path = NSNotification;
+			sourceTree = "<group>";
+		};
 		6B037DD620D2072900D03148 /* utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -554,6 +573,7 @@
 		6B440B7B24B065FA009FD3DD /* runtime */ = {
 			isa = PBXGroup;
 			children = (
+				6BAAB41124BB497E00F7B67C /* kvckvo */,
 				6BF56D1224B45FF10030AB7A /* switchMethod */,
 				6B440B7C24B06626009FD3DD /* RuntimeVC.h */,
 				6B440B7D24B06626009FD3DD /* RuntimeVC.m */,
@@ -642,6 +662,17 @@
 				6B5F0A09247BB5D90070EAD2 /* KeyboardMgr.m */,
 			);
 			name = keyboard;
+			sourceTree = "<group>";
+		};
+		6BAAB41124BB497E00F7B67C /* kvckvo */ = {
+			isa = PBXGroup;
+			children = (
+				6BAAB40E24BB478200F7B67C /* KVCKVOVC.h */,
+				6BAAB40F24BB478200F7B67C /* KVCKVOVC.m */,
+				6BAAB41224BB499C00F7B67C /* Man.h */,
+				6BAAB41324BB499C00F7B67C /* Man.m */,
+			);
+			path = kvckvo;
 			sourceTree = "<group>";
 		};
 		6BCF9A5F244F194B0036E8B4 /* UIPresentationController */ = {
@@ -945,6 +976,7 @@
 				6B44328824664C150014E255 /* QueueLinkedList.m in Sources */,
 				6B121FA42440A1F800BD804F /* ArcLoadView.m in Sources */,
 				6B726B36245835A000F0840A /* ScrollNavBar.m in Sources */,
+				6BAAB41424BB499C00F7B67C /* Man.m in Sources */,
 				6B07D51D20C8C13800BBB85B /* HWVC.m in Sources */,
 				6B6B690B24766A8F0039D88E /* ScrollLabel.m in Sources */,
 				6B302E3C2467BCE7003884CF /* StackGame.m in Sources */,
@@ -982,6 +1014,7 @@
 				6B73FDE82473F7F900145FA8 /* SubStack.m in Sources */,
 				6BCF9A97244F194B0036E8B4 /* UIScrollView+Helper.m in Sources */,
 				6BE65BA1246A4C4A005861C2 /* TreeVC.m in Sources */,
+				6B0365B924C82F6A001CBCEE /* NSNotificatioVC.m in Sources */,
 				6B07D52020C8C15B00BBB85B /* HWCircleProgressView.m in Sources */,
 				6B44327B2463A7360014E255 /* DataStructVC.m in Sources */,
 				6BE65B9924693209005861C2 /* AddLargeNumber.m in Sources */,
@@ -1002,6 +1035,7 @@
 				38149A671F749D3C004A8938 /* CircleLayer.m in Sources */,
 				382EA73C1F7394430052BE27 /* LayerDraw.m in Sources */,
 				6B726B2F24582D1E00F0840A /* ItemView.m in Sources */,
+				6BAAB41024BB478200F7B67C /* KVCKVOVC.m in Sources */,
 				6BF56D1524B460160030AB7A /* Father.m in Sources */,
 				6B36257E2455730D0099604F /* RectangleIndicatorView.m in Sources */,
 				6B726B3924583A5D00F0840A /* UIView+LXB.m in Sources */,
