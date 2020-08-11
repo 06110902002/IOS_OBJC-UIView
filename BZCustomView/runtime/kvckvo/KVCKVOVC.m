@@ -10,6 +10,7 @@
 #import "Man.h"
 
 @interface KVCKVOVC ()
+@property(nullable,strong) NSTimer* timer;
 
 @end
 
@@ -31,6 +32,20 @@
    [kvo setTitle:@"测试KVO" forState:UIControlStateNormal];
    [kvo addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
    [self.view addSubview:kvo];
+    
+    UIButton* timer = [[UIButton alloc] initWithFrame:CGRectMake(30, 150, 130, 30)];
+      timer.backgroundColor = [UIColor grayColor];
+      timer.tag = 12;
+      [timer setTitle:@"测试Timer" forState:UIControlStateNormal];
+      [timer addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+      [self.view addSubview:timer];
+    
+    UIButton* back = [[UIButton alloc] initWithFrame:CGRectMake(180, 150, 180, 30)];
+         back.backgroundColor = [UIColor grayColor];
+         back.tag = 13;
+         [back setTitle:@"返回" forState:UIControlStateNormal];
+         [back addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+         [self.view addSubview:back];
 }
 
 -(void) onClick:(UIButton*) button{
@@ -40,6 +55,13 @@
             break;
             
         default:
+            
+        case 12:
+            [self testTimer];
+            break;
+            
+        case 13:
+            [self.navigationController popViewControllerAnimated:false];
             break;
     }
 }
@@ -72,9 +94,36 @@
 
 -(void) testKVO{
     
-    
-    NSTimer* timer = [NSTimer scheduledTimerWithTimeInterval:3.0 target:self selector:@selector(timeAction) userInfo:nil repeats:YES];
+   
 }
+
+-(void)testTimer{
+    
+    __weak typeof(self) weakSelf = self;
+    self.timer =  [NSTimer scheduledTimerWithTimeInterval:1.0 target:weakSelf selector:@selector(fire) userInfo:nil repeats:YES];
+
+       [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
+}
+
+-(void)fire{
+    NSLog(@"88--------");
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+//    if(self.timer){
+//           [self.timer invalidate];
+//           self.timer = nil;
+//       }
+}
+
+-(void) dealloc{
+    if(self.timer){
+        [self.timer invalidate];
+        self.timer = nil;
+    }
+    NSLog(@"119------------dealloc");
+}
+
 
 
 

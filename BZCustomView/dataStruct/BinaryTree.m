@@ -412,7 +412,7 @@
     }
      
     TreeNode* left = [self lastPublicParentNode:root.leftChild node1:p node2:q];
-    TreeNode* right = [self lastPublicParentNode:root.leftChild node1:p node2:q];
+    TreeNode* right = [self lastPublicParentNode:root.rightChild node1:p node2:q];
     if(left != nil && right != nil){
         return root;
     }
@@ -420,6 +420,101 @@
 
 }
 
+/// 求两个结点的最近公共w父结点
+/// @param root 根结点
+/// @param p 其中一个结点
+/// @param q 另一个结点
+-(TreeNode*) lowestCommonAncestor:(TreeNode*) root node1:(TreeNode*)p node2:(TreeNode*)q{
+     if(!root || !p || !q) return nil;
+    
+    NSMutableArray* list1 = [[NSMutableArray alloc] init];
+    NSMutableArray* list2 = [[NSMutableArray alloc] init];
+    
+    [list1 addObject:root];
+    [list2 addObject:root];
+    
+    [self getPath:root forNode:p resultList:list1];
+    [self getPath:root forNode:q resultList:list1];
+    
+    TreeNode* result = nil;
+    for (int i = 0; i < MIN(list2.count, list1.count); i ++) {
+        if([list2[i] isEqual:list1[i]]){
+            result = list2[i];
+            break;
+        }
+    }
+    return result;
+
+}
+
+///  从根结点s查找到指定结点的所有路径
+/// @param root 根结点
+/// @param node 指定结点
+/// @param result 路径集合
+-(BOOL) getPath:(TreeNode*) root forNode:(TreeNode*) node resultList:(NSMutableArray*) result{
+    if (root.value == node.value) {
+        return true;
+    }
+    if(node.leftChild){
+        [result addObject:node.leftChild];
+        if([self getPath:node.leftChild forNode:node resultList:result]){
+            return true;
+        }
+        [result removeLastObject];
+    }
+    
+    if(node.rightChild){
+        [result addObject:node.rightChild];
+        if([self getPath:node.rightChild forNode:node resultList:result]){
+            return true;
+        }
+        [result removeLastObject];
+    }
+    return false;
+}
+
+/// 从根结点查找到指定结点的所有路径
+/// @param root 根结点
+/// @param node 指定结点
+-(void) getPath:(TreeNode*)root forNode:(TreeNode*)node{
+    
+    Stack* s = [[Stack alloc] initWithSize:100];
+    
+    
+    TreeNode* pre = nil;
+    TreeNode* p = root;
+    while (p || ![s isEmpty]) {
+        
+        while (p) {
+            [s push:p];
+            if (p.value == node.value) {
+                
+                printf("492--------从根结点查找到指定结点的所有路径 逆序即是:");
+                
+                while (![s isEmpty]) {
+                     TreeNode* node = (TreeNode*)[s pop];
+                      printf(" %ld ", (long)node.value);
+                }
+                
+                printf("\n");
+                return;
+            }
+            p = p.leftChild;
+        }
+        
+        if(![s isEmpty]){
+            p = (TreeNode*)[s top];
+            while(p.rightChild == nil || pre != nil && p.rightChild == pre) {
+                pre = (TreeNode*)[s pop];
+                p = (TreeNode*)[s top];
+            }
+            //继续遍历p的右子树
+            p = p.rightChild;
+            
+        }
+    }
+    
+}
 
 
 

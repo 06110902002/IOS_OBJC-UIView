@@ -118,6 +118,26 @@ NS_ASSUME_NONNULL_BEGIN
 -(TreeNode*) lastPublicParentNode:(TreeNode*) root node1:(TreeNode*)p node2:(TreeNode*)q;
 
 
+/// 求两个结点的最近公共w父结点
+/// @param root 根结点
+/// @param p 其中一个结点
+/// @param q 另一个结点
+-(TreeNode*) lowestCommonAncestor:(TreeNode*) root node1:(TreeNode*)p node2:(TreeNode*)q;
+
+
+/// 从根结点s查找到指定结点的所有路径
+/// @param root 根结点
+/// @param node 指定结点
+/// @param result 路径集合
+-(BOOL) getPath:(TreeNode*) root forNode:(TreeNode*) node resultList:(NSMutableArray*) result;
+
+
+/// 从根结点查找到指定结点的所有路径
+/// @param root 根结点
+/// @param node 指定结点
+-(void) getPath:(TreeNode*)root forNode:(TreeNode*)node;
+
+
 
 @end
 

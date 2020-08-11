@@ -56,7 +56,7 @@
     [super viewDidLoad];
     
    //[self testDrawRectInView];
-    //[self testBadlock];
+    [self testBadlock];
    
     
     //[self testLayerDelegateDraw];
@@ -562,10 +562,36 @@ static inline CGFloat screenWidth(){
 
 /// 测试死锁
 -(void) testBadlock{
-    dispatch_sync(dispatch_get_main_queue(), ^{
-       
-        NSLog(@"deallock");
-    });
+//    dispatch_sync(dispatch_get_main_queue(), ^{
+//
+//        NSLog(@"deallock");
+//    });
+    
+    //例子二
+    dispatch_queue_t serialQueue = dispatch_queue_create("test", DISPATCH_QUEUE_SERIAL);
+//
+//
+//    dispatch_async(serialQueue, ^{
+//
+//            dispatch_sync(serialQueue, ^{
+//
+//                NSLog(@"deadlock");
+//            });
+//        });
+    
+    
+    //下面不管是用全局 队列还是自定义队列都不会造成死锁
+//    dispatch_async(serialQueue, ^{
+//       
+//        NSLog(@"585-------:%@",[NSThread currentThread]);
+//        dispatch_sync(dispatch_get_main_queue(), ^{
+//            NSLog(@"587-------:%@",[NSThread currentThread]);
+//        });
+//  
+//        dispatch_sync(dispatch_get_main_queue(), ^{
+//            NSLog(@"591-------:%@",[NSThread currentThread]);
+//           });
+//    });
 }
 
 @end

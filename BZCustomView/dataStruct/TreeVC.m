@@ -102,6 +102,13 @@ typedef NS_OPTIONS(NSUInteger, OPT_TYPE) {
     [minDepth addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:minDepth];
     
+    UIButton* getPath = [[UIButton alloc] initWithFrame:CGRectMake(170, 250, 130, 30)];
+    getPath.backgroundColor = [UIColor grayColor];
+    getPath.tag = 178;
+    [getPath setTitle:@"根结点到指点结点的路径" forState:UIControlStateNormal];
+    [getPath addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:getPath];
+    
     UIButton* searchLevel = [[UIButton alloc] initWithFrame:CGRectMake(30, 290, 130, 30)];
     searchLevel.backgroundColor = [UIColor grayColor];
     searchLevel.tag = 79;
@@ -168,6 +175,11 @@ typedef NS_OPTIONS(NSUInteger, OPT_TYPE) {
         case 78:
            [self printTree:MIN_DEPTH];
            break;
+            
+        case 178:
+            [self printTree:TIGUI_PRE];
+            [self getPath];
+        break;
             
         case 79:
             [self printTree:SEARCH_LEVEL];
@@ -277,7 +289,18 @@ typedef NS_OPTIONS(NSUInteger, OPT_TYPE) {
     TreeNode* q = [[TreeNode alloc] initWithData:9];
     TreeNode* pubNode = [self.tree lastPublicParentNode:self.tree.root node1:p node2:q];
     
-    NSLog(@"\n280---------最近公共父结点:%ld",pubNode.value);
+     TreeNode* pubNode2 = [self.tree lowestCommonAncestor:self.tree.root node1:p node2:q];
+    
+    NSLog(@"\n280---------结点 ：%ld, 结点 ：%ld 最近公共父结点:%ld",p.value,q.value, pubNode.value);
+    NSLog(@"\n280---------方法二：结点 ：%ld, 结点 ：%ld 最近公共父结点:%ld",p.value,q.value, pubNode2.value);
+}
+
+-(void) getPath{
+    if(!self.tree){
+        self.tree = [[BinaryTree alloc] init];
+    }
+     TreeNode* p = [[TreeNode alloc] initWithData:3];
+    [self.tree getPath:self.tree.root forNode:p];
 }
 
 
